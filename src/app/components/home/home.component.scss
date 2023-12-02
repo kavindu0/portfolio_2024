@@ -12,7 +12,7 @@
 
     .sec-1{
       width: 100%;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid #0b0b0b;
 
       #canvas-pro-wrapper{
         display: flex;
@@ -36,10 +36,10 @@
         .self-typing-element {
           font-family: 'Arial', sans-serif;
           font-size: 24px;
-          border-right: 2px solid #000;
+          border-right: 2px solid #0b0b0b;
           white-space: nowrap;
           overflow: hidden;
-          margin: 0;
+          margin: 0 0 20px 0;
           letter-spacing: 2px;
           text-align: right;
         }
@@ -53,6 +53,33 @@
         background-position: left;
       }
 
+    }
+
+    .latest-post-wrapper{
+      background-color: #0b0b0b;
+      width: 100%;
+      min-height: 30px;
+      padding: 0 5vw;
+      color: white;
+
+      marquee{
+        span{
+          padding: 0 75px;
+          height: 100%;
+          width: 40%;
+
+          &:hover{
+            color: #0b0b0b;
+            cursor: pointer;
+            background-color: #b9a06e;
+          }
+        }
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 

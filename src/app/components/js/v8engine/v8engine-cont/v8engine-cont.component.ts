@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, Renderer2, ViewEncapsulation} from '@angular/core';
 import {ScrollService} from "../../../../services/scroll.service";
 
 @Component({
@@ -23,11 +23,16 @@ export class V8engineContComponent implements OnInit{
     'Conclusion:',
   ];
 
-  constructor(private scrollService: ScrollService) { }
+  constructor(private scrollService: ScrollService, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit() {
     this.scrollService.section$.subscribe(section => {
-      // Do something with the active section (e.g., highlight it)
+      // Remove highlight from all sections
+      // this.sections.forEach(s => this.renderer.removeClass(this.el.nativeElement.querySelector(`#${s}`), 'highlight'));
+
+      // Add highlight to the active section
+      // this.renderer.addClass(this.el.nativeElement.querySelector(`#${section}`), 'highlight');
+
     });
   }
 

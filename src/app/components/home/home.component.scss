@@ -1,3 +1,21 @@
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .main-canvas{
   width: 100%;
   height: 100%;
@@ -12,7 +30,6 @@
 
     .sec-1{
       width: 100%;
-      border-bottom: 2px solid #0b0b0b;
 
       #canvas-pro-wrapper{
         display: flex;
@@ -36,7 +53,7 @@
         .self-typing-element {
           font-family: 'Arial', sans-serif;
           font-size: 24px;
-          border-right: 2px solid #0b0b0b;
+          border-right: 2px solid #1c1c1c;
           white-space: nowrap;
           overflow: hidden;
           margin: 0 0 20px 0;
@@ -56,22 +73,38 @@
     }
 
     .latest-post-wrapper{
-      background-color: #0b0b0b;
+      background-color: #1c1c1c;
       width: 100%;
-      min-height: 30px;
-      padding: 0 5vw;
+      height: auto;
+      padding: 0 5vw!important;
       color: white;
 
-      marquee{
-        span{
-          padding: 0 75px;
-          height: 100%;
-          width: 40%;
+      .marquee-wrapper{
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+        position: relative;
+        margin: 0!important;;
+
+        .marquee {
+          display: inline-block;
+          animation: marqueeAnimation 20s linear infinite;
+          width: 100%;
+          text-align: center;
+          padding: 3px 0;
+
+          a{
+            color: white;
+            text-decoration: none;
+          }
 
           &:hover{
-            color: #0b0b0b;
-            cursor: pointer;
             background-color: #b9a06e;
+            cursor: pointer;
+
+            a{
+              color: #1c1c1c!important;
+            }
           }
         }
       }

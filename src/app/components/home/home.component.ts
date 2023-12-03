@@ -24,11 +24,15 @@ export class HomeComponent implements OnInit {
   textIndex = 0;
   charIndex = 0;
 
+  marqueeContainer = document.getElementById('marqueeContainer') as HTMLElement;
+  marqueeItems = document.querySelectorAll('.marquee');
+
   @ViewChild('canvas', {static: true}) canvas: ElementRef<HTMLCanvasElement> | any;
 
   ngOnInit() {
     this.profileImage();
     this.typeText();
+    this.updateMarquee();
   }
 
   profileImage() {
@@ -155,6 +159,16 @@ export class HomeComponent implements OnInit {
       this.textIndex = 0;
       setTimeout(() => this.typeText(), this.typingSpeed * 5); // Pause before restarting
     }
+  }
+
+  updateMarquee() {
+    const clonedItems = Array.from(this.marqueeItems).map(item => item.cloneNode(true));
+
+    clonedItems.forEach(item => {
+      this.marqueeContainer.appendChild(item);
+    });
+
+    this.marqueeItems.forEach(item => item.remove());
   }
 
 }

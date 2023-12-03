@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
         }
 
         draw() {
-          ctx.fillStyle = 'white';
+          ctx.fillStyle = '#d6c8ab';
           ctx.beginPath();
           ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
           ctx.fill();

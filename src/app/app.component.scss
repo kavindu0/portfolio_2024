@@ -44,8 +44,11 @@
     .rss-box, .about-box{
       min-width: 100px;
       text-align: center;
-      text-decoration: underline;
       cursor: pointer;
+
+      span{
+        text-decoration: underline;
+      }
 
       &:hover{
         background-color: #1c1c1c;

@@ -260,3 +260,22 @@ body {
     color: black;
   }
 }
+
+@keyframes cursorEndPoint {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.cursor-end-point{
+  cursor: none;
+  height: 15px;
+  width: 2px;
+  background-color: #f9f9f9;
+  animation: cursorEndPoint 1s infinite;
+}

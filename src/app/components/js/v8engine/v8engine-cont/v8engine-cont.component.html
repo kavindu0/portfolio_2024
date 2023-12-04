@@ -168,6 +168,47 @@
       <p>One of the hallmarks of V8 engines is their impressive torque output. The V8 design allows for optimal
         utilization of engine displacement, resulting in a broad and robust torque curve. This translates to strong
         acceleration and towing capabilities across a wide range of RPM.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Javascript
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">class </span><span class="name">TorqueCurve </span><span>&lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engine)&lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
+          class="variable">.engine = </span><span
+          class="variable">engine</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
+          &nbsp;&nbsp;&nbsp;<span class="name">generateTorqueCurve</span><span>()&lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span
+          class="span name">log</span>(<span
+          class="display">`The $&lcub;<span class="initializer">this</span>.engine&rcub; produces a broad and robust torque curve.`</span>);<br>
+          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
+          <span>&rcub;</span><br><br>
+          <span class="comment">// Example usage</span><br>
+          <span class="keyword">const </span><span class="variable">torqueCurveGenerator = </span><span
+          class="keyword">new </span><span class="name">TorqueCurve</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
+          <span class="variable">torqueCurveGenerator.</span><span class="name">generateTorqueCurve</span>();<br>
+        </div>
+      </div>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <span class="variable">Console</span>
+        </div>
+        <div class="code-snippet-wrapper">
+          <div class="d-flex align-items-center">
+            <div><span> > </span><span>The V8 Engine produces a broad and robust torque curve. &nbsp;</span></div>
+            <div class="cursor-end-point"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="5. Versatility Across.." class="section">
@@ -176,6 +217,49 @@
         trucks and performance cars, the adaptability of V8 engines speaks to their ability to cater to different
         driving
         needs and preferences.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Javascript
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">class </span><span class="name">Vehicle </span><span>&lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engineType)&lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
+          class="variable">.engineType = </span><span
+          class="variable">engineType</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
+          <span class="comment">// Example usage</span><br>
+          <span class="keyword">const </span><span class="variable">luxurySedan = </span><span
+          class="keyword">new </span><span class="name">Vehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
+          <span class="keyword">const </span><span class="variable">truck = </span><span
+          class="keyword">new </span><span class="name">Vehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
+          <span class="initializer">console</span>.<span
+          class="span name">log</span>(<span
+          class="display">`Luxury Sedan Engine Type: $&lcub;luxurySedan.engineType&rcub;`</span>);<br>
+          <span class="initializer">console</span>.<span
+          class="span name">log</span>(<span
+          class="display">`Truck Engine Type: $&lcub;truck.engineType&rcub;`</span>);<br>
+        </div>
+      </div>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <span class="variable">Console</span>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span> > </span><span>Luxury Sedan Engine Type: V8 Engine &nbsp;</span>
+          <div class="d-flex align-items-center">
+            <div><span> > </span><span>Truck Engine Type: V8 Engine &nbsp;</span></div>
+            <div class="cursor-end-point"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="6. The Signature Sound:" class="section">

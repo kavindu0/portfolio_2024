@@ -8,7 +8,7 @@
         <div class="note-main-title">
           TABLE OF CONTENTS
         </div>
-        <div class="note-title-content">
+        <div class="note-title-content sticky-top">
           <ul>
             <li *ngFor="let section of sections" (click)="onNavClick(section)" [class.active]="activeSection === section">
               {{ section }}

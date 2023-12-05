@@ -120,7 +120,7 @@
           class="initializer">80</span>); <span class="comment">// Draw a stroked rectangle</span><br>
           <span class="variable">context.</span><span class="name">arc</span>(<span class="initializer">350</span>,<span
           class="initializer">90</span>,<span class="initializer">40</span>,<span class="initializer">0</span>,<span
-          class="name">math</span>.PI * <span class="initializer">2</span>); <span
+          class="name">Math</span>.PI * <span class="initializer">2</span>); <span
           class="comment">// Draw a circle</span><br>
           <span class="variable">context.</span><span class="name">fill</span>(); <span class="comment">// Fill the circle</span><br>
         </div>
@@ -220,12 +220,11 @@
     </div>
 
     <div id="‎ ‎ ➥ Transformations:" class="section">
-      <h2>Customization and Innovation:</h2>
-      <p>V8 engines have a strong presence in the aftermarket, offering enthusiasts the opportunity to enhance
-        performance
-        through various modifications. From upgraded exhaust systems to performance tuning, the customization potential
-        of
-        V8 engines contributes to their enduring popularity among car enthusiasts.</p>
+      <h3>6. Transformations:</h3>
+      <ul>
+        <li>Apply transformations like rotation, scaling, and translation.
+        </li>
+      </ul>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -238,38 +237,12 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">V8EngineModifications </span><span>(engine)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engine = </span><span class="variable">engine</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.modifications = []</span><br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">addModification</span><span>(modification)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.<span
-          class="variable">modifications</span>.<span
-          class="name">push</span>(modification)<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
-          <span>&rcub;</span><br><br>
-          <span class="keyword">const </span><span class="variable">modifiedEngine = </span><span
-          class="keyword">new </span><span class="name">V8EngineModifications</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="variable">modifiedEngine.</span><span class="name">addModification</span>(<span class="display">"Upgraded Exhaust System"</span>);<br>
-          <span class="variable">modifiedEngine.</span><span class="name">addModification</span>(<span class="display">"Performance Tuning"</span>);<br>
-          <span class="initializer">console</span>.<span
-          class="name">log</span>(<span
-          class="display">`Modifications: $&lcub;modifiedEngine.modifications&rcub;`</span>);<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span> > </span><span>Modifications: Upgraded Exhaust System,Performance Tuning &nbsp;</span>
-          <div class="d-flex align-items-center">
-            <div><span> > </span></div>&nbsp;
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="variable">context.</span><span class="name">rotate</span>(<span
+          class="name">Math</span>.PI / <span class="initializer">4</span>); <span class="comment">// Rotate by <span class="circle-sketch-highlight">45 degrees</span></span> <br>
+          <span class="variable">context.</span><span class="name">scale</span>(<span
+          class="initializer">2</span>,<span class="initializer">1</span>); <span class="comment">// Scale horizontally by 2</span> <br>
+          <span class="variable">context.</span><span class="name">translate</span>(<span
+          class="initializer">100</span>,<span class="initializer">100</span>); <span class="comment">// Translate the origin</span> <br>
         </div>
       </div>
     </div>

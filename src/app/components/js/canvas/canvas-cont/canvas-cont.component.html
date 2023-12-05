@@ -40,8 +40,10 @@
 
     <div id="2. Getting the Canvas.." class="section">
       <h2>Getting the Canvas Context:</h2>
-      <p>To draw on the canvas, you need to obtain the drawing context. The canvas supports two-dimensional <strong>(2D)</strong> and
-        three-dimensional <strong>(3D)</strong> contexts. For most applications, we'll focus on the <span class="circle-sketch-highlight">2D context:</span></p>
+      <p>To draw on the canvas, you need to obtain the drawing context. The canvas supports two-dimensional
+        <strong>(2D)</strong> and
+        three-dimensional <strong>(3D)</strong> contexts. For most applications, we'll focus on the <span
+          class="circle-sketch-highlight">2D context:</span></p>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -60,7 +62,8 @@
           class="variable">canvas</span>.<span class="name">getContext</span><span>(<span class="display">"2d"</span>);</span><br>
         </div>
       </div>
-      <p>Now, the <span class="circle-sketch-highlight"><strong>context</strong></span> variable holds the 2D drawing context for the canvas. All subsequent drawing operations will be performed through this context.</p>
+      <p>Now, the <span class="circle-sketch-highlight"><strong>context</strong></span> variable holds the 2D drawing
+        context for the canvas. All subsequent drawing operations will be performed through this context.</p>
     </div>
 
     <div id="3. Exploring Canvas.." class="section">
@@ -68,10 +71,10 @@
     </div>
 
     <div id="‎ ‎ ➥ Fill and Stroke.." class="section">
-      <h2>Torque Across the Stroke:</h2>
-      <p>One of the hallmarks of V8 engines is their impressive torque output. The V8 design allows for optimal
-        utilization of engine displacement, resulting in a broad and robust torque curve. This translates to strong
-        acceleration and towing capabilities across a wide range of RPM.</p>
+      <h3>1. Fill and Stroke Styles:</h3>
+      <ul>
+        <li>Set the fill and stroke styles to define the colors of shapes and lines.</li>
+      </ul>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -84,44 +87,19 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">TorqueCurve </span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engine)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engine = </span><span
-          class="variable">engine</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">generateTorqueCurve</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`The $&lcub;<span class="initializer">this</span>.engine&rcub; produces a broad and robust torque curve.`</span>);<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
-          <span>&rcub;</span><br><br>
-          <span class="comment">// Example usage</span><br>
-          <span class="keyword">const </span><span class="variable">torqueCurveGenerator = </span><span
-          class="keyword">new </span><span class="name">TorqueCurve</span><span>(<span
-          class="display">"V8 Engine"</span>);</span><br>
-          <span class="variable">torqueCurveGenerator.</span><span class="name">generateTorqueCurve</span>();<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>The V8 Engine produces a broad and robust torque curve. &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="variable">context.fillStyle = </span><span class="display">"blue"</span>;<br>
+          <span class="variable">context.fillStroke = </span><span class="display">"green"</span>;<br>
         </div>
       </div>
     </div>
 
     <div id="‎ ‎ ➥ Drawing Shapes:" class="section">
-      <h2>Versatility Across the Stroke:</h2>
-      <p>V8 engines are incredibly versatile, finding homes in various vehicle types. From luxury sedans and SUVs to
-        trucks and performance cars, the adaptability of V8 engines speaks to their ability to cater to different
-        driving
-        needs and preferences.</p>
+      <h3>2. Drawing Shapes:</h3>
+      <ul>
+        <li>Use methods like <span class="circle-sketch-highlight">fillRect, strokeRect, and arc</span> to draw shapes
+          on the canvas.
+        </li>
+      </ul>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -134,35 +112,17 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">Vehicle </span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engineType)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engineType = </span><span
-          class="variable">engineType</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          <span class="comment">// Example usage</span><br>
-          <span class="keyword">const </span><span class="variable">luxurySedan = </span><span
-          class="keyword">new </span><span class="name">Vehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="keyword">const </span><span class="variable">truck = </span><span
-          class="keyword">new </span><span class="name">Vehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`Luxury Sedan Engine Type: $&lcub;luxurySedan.engineType&rcub;`</span>);<br>
-          <span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`Truck Engine Type: $&lcub;truck.engineType&rcub;`</span>);<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span> > </span><span>Luxury Sedan Engine Type: V8 Engine &nbsp;</span>
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>Truck Engine Type: V8 Engine &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="variable">context.</span><span class="name">fillRect</span>(<span
+          class="initializer">50</span>,<span class="initializer">50</span>,<span class="initializer">100</span>,<span
+          class="initializer">80</span>); <span class="comment">// Draw a filled rectangle</span><br>
+          <span class="variable">context.</span><span class="name">strokeRect</span>(<span
+          class="initializer">200</span>,<span class="initializer">50</span>,<span class="initializer">100</span>,<span
+          class="initializer">80</span>); <span class="comment">// Draw a stroked rectangle</span><br>
+          <span class="variable">context.</span><span class="name">arc</span>(<span class="initializer">350</span>,<span
+          class="initializer">90</span>,<span class="initializer">40</span>,<span class="initializer">0</span>,<span
+          class="name">math</span>.PI * <span class="initializer">2</span>); <span
+          class="comment">// Draw a circle</span><br>
+          <span class="variable">context.</span><span class="name">fill</span>(); <span class="comment">// Fill the circle</span><br>
         </div>
       </div>
     </div>

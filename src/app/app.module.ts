@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { JsComponent } from './components/js/js.component';
 import { V8engineComponent } from './components/js/v8engine/v8engine.component';
 import { V8engineContComponent } from './components/js/v8engine/v8engine-cont/v8engine-cont.component';
+import { CanvasComponent } from './components/js/canvas/canvas.component';
+import { CanvasContComponent } from './components/js/canvas/canvas-cont/canvas-cont.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { V8engineContComponent } from './components/js/v8engine/v8engine-cont/v8
     HomeComponent,
     JsComponent,
     V8engineComponent,
-    V8engineContComponent
+    V8engineContComponent,
+    CanvasComponent,
+    CanvasContComponent
   ],
   imports: [
     BrowserModule,

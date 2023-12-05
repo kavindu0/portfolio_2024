@@ -181,20 +181,19 @@
           <span class="variable">context.font = </span><span class="display">"24px Arial"</span>; <br>
           <span class="variable">context.</span><span class="name">fillText</span>(<span class="display">"Hello, Canvas!"</span>,<span
           class="initializer">200</span>,<span class="initializer">250</span>); <br>
-          <span class="variable">context.</span><span class="name">lineTo</span>(<span class="display">"Stroked Text"</span>,<span
+          <span class="variable">context.</span><span class="name">lineTo</span>(<span
+          class="display">"Stroked Text"</span>,<span
           class="initializer">200</span>,<span class="initializer">280</span>); <br>
-
         </div>
       </div>
     </div>
 
     <div id="‎ ‎ ➥ Image Drawing:" class="section">
-      <h2>Customization and Innovation:</h2>
-      <p>V8 engines have a strong presence in the aftermarket, offering enthusiasts the opportunity to enhance
-        performance
-        through various modifications. From upgraded exhaust systems to performance tuning, the customization potential
-        of
-        V8 engines contributes to their enduring popularity among car enthusiasts.</p>
+      <h3>5. Image Drawing:</h3>
+      <ul>
+        <li>Load and draw images onto the canvas.
+        </li>
+      </ul>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -207,38 +206,15 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">V8EngineModifications </span><span>(engine)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engine = </span><span class="variable">engine</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.modifications = []</span><br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">addModification</span><span>(modification)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.<span
-          class="variable">modifications</span>.<span
-          class="name">push</span>(modification)<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
-          <span>&rcub;</span><br><br>
-          <span class="keyword">const </span><span class="variable">modifiedEngine = </span><span
-          class="keyword">new </span><span class="name">V8EngineModifications</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="variable">modifiedEngine.</span><span class="name">addModification</span>(<span class="display">"Upgraded Exhaust System"</span>);<br>
-          <span class="variable">modifiedEngine.</span><span class="name">addModification</span>(<span class="display">"Performance Tuning"</span>);<br>
-          <span class="initializer">console</span>.<span
-          class="name">log</span>(<span
-          class="display">`Modifications: $&lcub;modifiedEngine.modifications&rcub;`</span>);<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span> > </span><span>Modifications: Upgraded Exhaust System,Performance Tuning &nbsp;</span>
-          <div class="d-flex align-items-center">
-            <div><span> > </span></div>&nbsp;
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="keyword">const </span><span class="variable">img</span> = <span class="keyword">new </span><span
+          class="name">Image</span>();<br>
+          <span class="variable">img.</span><span class="name">src</span> = <span
+          class="display">"image.jpg"</span>;<br>
+          <span class="variable">img.onload = () => &lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="variable">context.</span><span class="name"></span><span
+          class="name">drawImage</span>(<span class="variable">img</span>,<span class="initializer">400</span>,<span
+          class="initializer">50</span>,<span class="initializer">100</span>,<span class="initializer">100</span>);<br>
+          &rcub;<br>
         </div>
       </div>
     </div>
@@ -301,10 +277,11 @@
     <div id="Conclusion:" class="section">
       <h2>Conclusion:</h2>
       <p>The HTML
-        <span class="realistic-marker-highlight">&lt;canvas&gt;</span> element provides a blank canvas for creative expression on the web. By understanding the canvas context
-          and its properties, you can bring your designs to life through dynamic graphics, animations, and interactive
-          elements. Experiment with different methods and properties to unlock the full potential of the HTML canvas in
-          your web projects.
+        <span class="realistic-marker-highlight">&lt;canvas&gt;</span> element provides a blank canvas for creative
+        expression on the web. By understanding the canvas context
+        and its properties, you can bring your designs to life through dynamic graphics, animations, and interactive
+        elements. Experiment with different methods and properties to unlock the full potential of the HTML canvas in
+        your web projects.
       </p>
     </div>
   </div>

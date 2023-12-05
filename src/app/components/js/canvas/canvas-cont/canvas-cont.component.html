@@ -161,12 +161,11 @@
     </div>
 
     <div id="‎ ‎ ➥ Text Rendering:" class="section">
-      <h2>Integration of Advanced Components:</h2>
-      <p>Modern V8 engines incorporate cutting-edge technologies, including direct fuel injection, variable valve
-        timing,
-        and cylinder deactivation. These innovations enhance fuel efficiency and reduce emissions without compromising
-        the
-        engine's performance capabilities.</p>
+      <h3>4. Text Rendering:</h3>
+      <ul>
+        <li>Render text on the canvas using <span class="circle-sketch-highlight">fillText and strokeText</span>.
+        </li>
+      </ul>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -179,33 +178,12 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">ModernV8Engine </span><span
-          class="keyword">extends </span><span class="name">V8Engine</span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">super</span>();<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.technologies = [</span><span
-          class="display">"Direct Fuel Injection"</span>,<span
-          class="display">"Variable Valve Timing"</span>,<span
-          class="display">"Cylinder Deactivation"</span>];<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          <span class="keyword">const </span><span class="variable">modernEngine = </span><span
-          class="keyword">new </span><span class="name">ModernV8Engine</span><span>();</span><br>
-          <span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`Integrated Technologies: $&lcub;modernEngine.technologies&rcub;`</span>);<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span> > </span><span>Integrated Technologies: Direct Fuel Injection,Variable Valve Timing,Cylinder Deactivation &nbsp;</span>
-          <div class="d-flex align-items-center">
-            <div><span> > </span></div>&nbsp;
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="variable">context.font = </span><span class="display">"24px Arial"</span>; <br>
+          <span class="variable">context.</span><span class="name">fillText</span>(<span class="display">"Hello, Canvas!"</span>,<span
+          class="initializer">200</span>,<span class="initializer">250</span>); <br>
+          <span class="variable">context.</span><span class="name">lineTo</span>(<span class="display">"Stroked Text"</span>,<span
+          class="initializer">200</span>,<span class="initializer">280</span>); <br>
+
         </div>
       </div>
     </div>
@@ -322,12 +300,12 @@
 
     <div id="Conclusion:" class="section">
       <h2>Conclusion:</h2>
-      <p>In the realm of internal combustion engines, V8 engines stand as icons of power, precision, and versatility.
-        Whether you appreciate the raw power of a muscle car or the towing capabilities of a pickup truck, the V8 engine
-        continues to captivate automotive enthusiasts and drivers alike. As technology advances, we can expect to see
-        further innovations that enhance the performance and efficiency of these revered powerhouses, ensuring their
-        place
-        in the automotive landscape for years to come.</p>
+      <p>The HTML
+        <span class="realistic-marker-highlight">&lt;canvas&gt;</span> element provides a blank canvas for creative expression on the web. By understanding the canvas context
+          and its properties, you can bring your designs to life through dynamic graphics, animations, and interactive
+          elements. Experiment with different methods and properties to unlock the full potential of the HTML canvas in
+          your web projects.
+      </p>
     </div>
   </div>
 

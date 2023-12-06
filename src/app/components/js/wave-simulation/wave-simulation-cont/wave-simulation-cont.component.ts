@@ -26,6 +26,7 @@ export class WaveSimulationContComponent implements OnInit, AfterViewInit {
     '3. Converting from Canvas..',
     '4. JavaScript Implementation:',
     'Conclusion:',
+    'Reference:',
   ];
   gistUrl: string = 'https://gist.github.com/kavicastelo/a48e49be7e8fd5b166648415312189af';
 

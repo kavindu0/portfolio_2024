@@ -16,6 +16,7 @@ export class WaveSimulationComponent implements OnInit {
     '3. Converting from Canvas..',
     '4. JavaScript Implementation:',
     'Conclusion:',
+    'Reference:',
   ];
   activeSection: string | any;
 

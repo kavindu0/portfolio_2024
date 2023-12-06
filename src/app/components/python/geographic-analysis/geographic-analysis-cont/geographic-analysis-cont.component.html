@@ -48,10 +48,10 @@
     </div>
 
     <div id="‎ ‎ ➥ Handling Complex.." class="section">
-      <h2>Torque Across the Stroke:</h2>
-      <p>One of the hallmarks of V8 engines is their impressive torque output. The V8 design allows for optimal
-        utilization of engine displacement, resulting in a broad and robust torque curve. This translates to strong
-        acceleration and towing capabilities across a wide range of RPM.</p>
+      <h3>Handling Complex Spatial Data:</h3>
+      <p>GeoPandas, built on top of Pandas, extends the capabilities of data manipulation to geospatial datasets. This
+        enables analysts to perform complex operations, such as spatial joins and overlays, to combine datasets and
+        extract meaningful information.</p>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -60,38 +60,16 @@
             <div class="circle"></div>
           </div>
           <div class="language">
-            Javascript
+            Python
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">TorqueCurve </span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engine)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engine = </span><span
-          class="variable">engine</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">generateTorqueCurve</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`The $&lcub;<span class="initializer">this</span>.engine&rcub; produces a broad and robust torque curve.`</span>);<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
-          <span>&rcub;</span><br><br>
-          <span class="comment">// Example usage</span><br>
-          <span class="keyword">const </span><span class="variable">torqueCurveGenerator = </span><span
-          class="keyword">new </span><span class="name">TorqueCurve</span><span>(<span
-          class="display">"V8 Engine"</span>);</span><br>
-          <span class="variable">torqueCurveGenerator.</span><span class="name">generateTorqueCurve</span>();<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>The V8 Engine produces a broad and robust torque curve. &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="keyword">import </span><span class="variable">geopandas</span><span> as </span><span class="variable">gpd</span><br><br>
+          <span class="comment"># Spatial join example</span><br>
+          <span class="variable">cities = gpd.read_file(</span><span class="display">'cities.shp'</span><span class="variable">)</span><br>
+          <span class="variable">countries = gpd.read_file(</span><span class="display">'countries.shp'</span><span class="variable">)</span><br><br>
+          <span class="comment"># Join cities to countries based on spatial relationship</span><br>
+          <span class="variable">joined = gpd.sjoin(cities, countries, how=<span class="display">'left'</span>, op=<span class="display">'intersects'</span>)</span><br>
         </div>
       </div>
     </div>

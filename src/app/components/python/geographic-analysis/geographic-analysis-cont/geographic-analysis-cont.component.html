@@ -64,22 +64,24 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">import </span><span class="variable">geopandas</span><span> as </span><span class="variable">gpd</span><br><br>
+          <span class="keyword">import </span><span class="variable">geopandas</span><span> as </span><span
+          class="variable">gpd</span><br><br>
           <span class="comment"># Spatial join example</span><br>
-          <span class="variable">cities = gpd.read_file(</span><span class="display">'cities.shp'</span><span class="variable">)</span><br>
-          <span class="variable">countries = gpd.read_file(</span><span class="display">'countries.shp'</span><span class="variable">)</span><br><br>
+          <span class="variable">cities = gpd.read_file(</span><span class="display">'cities.shp'</span><span
+          class="variable">)</span><br>
+          <span class="variable">countries = gpd.read_file(</span><span class="display">'countries.shp'</span><span
+          class="variable">)</span><br><br>
           <span class="comment"># Join cities to countries based on spatial relationship</span><br>
-          <span class="variable">joined = gpd.sjoin(cities, countries, how=<span class="display">'left'</span>, op=<span class="display">'intersects'</span>)</span><br>
+          <span class="variable">joined = gpd.sjoin(cities, countries, how=<span class="display">'left'</span>, op=<span
+            class="display">'intersects'</span>)</span><br>
         </div>
       </div>
     </div>
 
     <div id="‎ ‎ ➥ Advanced Visualization.." class="section">
-      <h2>Versatility Across the Stroke:</h2>
-      <p>V8 engines are incredibly versatile, finding homes in various vehicle types. From luxury sedans and SUVs to
-        trucks and performance cars, the adaptability of V8 engines speaks to their ability to cater to different
-        driving
-        needs and preferences.</p>
+      <h2>Advanced Visualization with Plotly:</h2>
+      <p>Plotly offers interactive and dynamic visualizations. For instance, creating a choropleth map that visualizes
+        spatial data based on color gradients:</p>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -88,39 +90,16 @@
             <div class="circle"></div>
           </div>
           <div class="language">
-            Javascript
+            Python
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">Vehicle </span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engineType)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engineType = </span><span
-          class="variable">engineType</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          <span class="comment">// Example usage</span><br>
-          <span class="keyword">const </span><span class="variable">luxurySedan = </span><span
-          class="keyword">new </span><span class="name">Vehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="keyword">const </span><span class="variable">truck = </span><span
-          class="keyword">new </span><span class="name">Vehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`Luxury Sedan Engine Type: $&lcub;luxurySedan.engineType&rcub;`</span>);<br>
-          <span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`Truck Engine Type: $&lcub;truck.engineType&rcub;`</span>);<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span> > </span><span>Luxury Sedan Engine Type: V8 Engine &nbsp;</span>
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>Truck Engine Type: V8 Engine &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="keyword">import </span><span class="variable">plotly.express</span><span> as </span><span
+          class="variable">px</span><br><br>
+          <span class="variable">fig = px.choropleth(world, geojson=world.geometry, color=</span><span
+          class="display">'pop_est'</span>,locations=world.index, featureidkey=<span
+          class="display">"properties.index"</span>, projection=<span class="display">"natural earth"</span>)<br>
+          <span class="variable">fig.show()</span><br>
         </div>
       </div>
     </div>

@@ -6,6 +6,10 @@ import {V8engineComponent} from "./components/js/v8engine/v8engine.component";
 import {V8engineContComponent} from "./components/js/v8engine/v8engine-cont/v8engine-cont.component";
 import {CanvasComponent} from "./components/js/canvas/canvas.component";
 import {CanvasContComponent} from "./components/js/canvas/canvas-cont/canvas-cont.component";
+import {WaveSimulationComponent} from "./components/js/wave-simulation/wave-simulation.component";
+import {
+  WaveSimulationContComponent
+} from "./components/js/wave-simulation/wave-simulation-cont/wave-simulation-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +21,9 @@ const routes: Routes = [
       ]},
       {path: 'canvas', component: CanvasComponent, children:[
         {path: '', component: CanvasContComponent}
+      ]},
+      {path: 'wave', component: WaveSimulationComponent, children:[
+          {path: '', component: WaveSimulationContComponent}
       ]}
     ]}
 ];

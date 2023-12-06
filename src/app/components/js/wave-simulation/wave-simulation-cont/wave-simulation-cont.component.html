@@ -31,63 +31,26 @@
         \]
       </p>
       <p>
-        This equation describes the<span class="circle-sketch-highlight"> amplitude (y)</span> of a wave on a string over both<span class="circle-sketch-highlight"> space (x)</span> and <span class="circle-sketch-highlight">time (t)</span>. Let's break down the components:
+        This equation describes the<span class="circle-sketch-highlight"> amplitude (\(y\))</span> of a wave on a string over both<span class="circle-sketch-highlight"> space (\(x\))</span> and <span class="circle-sketch-highlight">time (\(t\))</span>. Let's break down the components:
       </p>
       <ul>
-        <li>c: Speed of the wave [m/s]</li>
-        <li>&gamma;: Damping constant [s/m]</li>
-        <li>l: Characteristic length (stiffness term) [dimensionless]</li>
+        <li>\(c\): Speed of the wave [m/s]</li>
+        <li>&gamma;(gamma): Damping constant [s/m]</li>
+        <li>\(l\): Characteristic length (stiffness term) [dimensionless]</li>
       </ul>
     </div>
 
-    <div id="2. Power and Performance.." class="section">
-      <h2>Power and Performance:</h2>
-      <p>V8 engines are synonymous with power and performance. The increased number of cylinders and higher displacement
-        result in a substantial power output. This characteristic makes V8 engines a preferred choice for
-        high-performance
-        vehicles, including sports cars and muscle cars.</p>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <div class="console">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="language">
-            Javascript
-          </div>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">HighPerformanceVehicle </span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engine)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engine = </span><span
-          class="variable">engine</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">accelerate</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`The $&lcub;<span
-          class="initializer">this</span>.engine&rcub; is unleashing its power!`</span>);<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
-          <span>&rcub;</span><br><br>
-          <span class="comment">// Example usage</span><br>
-          <span class="keyword">const </span><span class="variable">highPerformanceCar = </span><span
-          class="keyword">new </span><span class="name">HighPerformanceVehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="variable">highPerformanceCar.</span><span class="name">accelerate</span>();<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>The V8 Engine is unleashing its power! &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
-        </div>
-      </div>
+    <div id="2. Discrete Form of the.." class="section">
+      <h2>Discrete Form of the Equation:</h2>
+      <p>Discretizing the wave equation allows us to implement it numerically. The discrete form is given by:</p>
+      <p ngNonBindable>
+        \[
+        \frac{{y_{j+1}^{m} -2y_j^m + y_{j-1}^{m}}}{{\Delta x^2}} - \frac{{1}}{{c^2}}\frac{{y_j^{m+1} -2y_j^m + y_j^{m-1}}}{{\Delta t^2}} - \gamma \frac{{y_j^{m+1} - y_j^{m-1}}}{{2 \Delta t}} - l^2 \frac{{y_{j-2}^m -4y_{j-1}^m +6y_{j}^m -4y_{j+1}^m +y_{j+2}^m}}{{\Delta x^4}} = 0
+        \]
+      </p>
+      <p>
+        This equation represents the evolution of the wave at <span class="circle-sketch-highlight">each point <strong>\(j\)</strong></span> and <span class="circle-sketch-highlight">time step <strong>\(m\)</strong></span>.
+      </p>
     </div>
 
     <div id="3. Smooth Operation and.." class="section">

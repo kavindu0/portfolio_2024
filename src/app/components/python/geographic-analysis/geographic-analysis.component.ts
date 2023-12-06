@@ -9,16 +9,16 @@ import {ScrollService} from "../../../services/scroll.service";
 export class GeographicAnalysisComponent implements OnInit {
 
   sections = [
-    'Unveiling the Intricacies..',
+    'Unveiling the Power of..',
     'Introduction:',
-    '1. The V8 Configuration:',
-    '2. Power and Performance..',
-    '3. Smooth Operation and..',
-    '4. Torque Across the..',
-    '5. Versatility Across..',
-    '6. The Signature Sound:',
-    '7. Integration of Advanced..',
-    '8. Customization and..',
+    '1. Understanding Geographic..',
+    '2. The Role of Geographic..',
+    '3. Python for Advanced Geographic..',
+    '‎ ‎ ➥ Handling Complex..',
+    '‎ ‎ ➥ Advanced Visualization..',
+    '4. Impact on Daily Life:..',
+    '‎ ‎ ➥ Google Maps:',
+    '‎ ‎ ➥ SpaceX Starlink:',
     'Conclusion:',
   ];
   activeSection: string | any;

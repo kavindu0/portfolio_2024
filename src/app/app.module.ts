@@ -9,6 +9,8 @@ import { V8engineComponent } from './components/js/v8engine/v8engine.component';
 import { V8engineContComponent } from './components/js/v8engine/v8engine-cont/v8engine-cont.component';
 import { CanvasComponent } from './components/js/canvas/canvas.component';
 import { CanvasContComponent } from './components/js/canvas/canvas-cont/canvas-cont.component';
+import { WaveSimulationComponent } from './components/js/wave-simulation/wave-simulation.component';
+import { WaveSimulationContComponent } from './components/js/wave-simulation/wave-simulation-cont/wave-simulation-cont.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CanvasContComponent } from './components/js/canvas/canvas-cont/canvas-c
     V8engineComponent,
     V8engineContComponent,
     CanvasComponent,
-    CanvasContComponent
+    CanvasContComponent,
+    WaveSimulationComponent,
+    WaveSimulationContComponent
   ],
   imports: [
     BrowserModule,

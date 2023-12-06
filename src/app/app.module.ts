@@ -11,6 +11,9 @@ import { CanvasComponent } from './components/js/canvas/canvas.component';
 import { CanvasContComponent } from './components/js/canvas/canvas-cont/canvas-cont.component';
 import { WaveSimulationComponent } from './components/js/wave-simulation/wave-simulation.component';
 import { WaveSimulationContComponent } from './components/js/wave-simulation/wave-simulation-cont/wave-simulation-cont.component';
+import { PythonComponent } from './components/python/python.component';
+import { GeographicAnalysisComponent } from './components/python/geographic-analysis/geographic-analysis.component';
+import { GeographicAnalysisContComponent } from './components/python/geographic-analysis/geographic-analysis-cont/geographic-analysis-cont.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { WaveSimulationContComponent } from './components/js/wave-simulation/wav
     CanvasComponent,
     CanvasContComponent,
     WaveSimulationComponent,
-    WaveSimulationContComponent
+    WaveSimulationContComponent,
+    PythonComponent,
+    GeographicAnalysisComponent,
+    GeographicAnalysisContComponent
   ],
   imports: [
     BrowserModule,

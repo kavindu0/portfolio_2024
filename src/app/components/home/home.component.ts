@@ -117,7 +117,7 @@ export class HomeComponent implements OnInit {
 
       function animate() {
         ctx.globalAlpha = 0.05;
-        ctx.fillStyle = '#2d3436';
+        ctx.fillStyle = '#1c1c1c';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.globalAlpha = 0.2;
         for (let i = 0; i < particles.length; i++) {

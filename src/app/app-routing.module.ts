@@ -10,6 +10,11 @@ import {WaveSimulationComponent} from "./components/js/wave-simulation/wave-simu
 import {
   WaveSimulationContComponent
 } from "./components/js/wave-simulation/wave-simulation-cont/wave-simulation-cont.component";
+import {PythonComponent} from "./components/python/python.component";
+import {GeographicAnalysisComponent} from "./components/python/geographic-analysis/geographic-analysis.component";
+import {
+  GeographicAnalysisContComponent
+} from "./components/python/geographic-analysis/geographic-analysis-cont/geographic-analysis-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -25,7 +30,13 @@ const routes: Routes = [
       {path: 'wave', component: WaveSimulationComponent, children:[
           {path: '', component: WaveSimulationContComponent}
       ]}
-    ]}
+    ]},
+  { path: 'python', component: PythonComponent, children:[
+      {path: '', redirectTo: '/geographic-analysis', pathMatch: 'full'},
+      {path: 'geographic-analysis', component: GeographicAnalysisComponent, children:[
+          {path: '', component: GeographicAnalysisContComponent}
+      ]}
+  ]},
 ];
 
 @NgModule({

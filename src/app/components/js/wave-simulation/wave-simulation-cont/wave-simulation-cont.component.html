@@ -27,11 +27,14 @@
       <p>The true wave equation, accounting for damping and stress-strain coupling, is given by:</p>
       <p ngNonBindable>
         \[
-        \frac{{\partial^2 y}}{{\partial x^2}} - \frac{{1}}{{c^2}}\frac{{\partial^2 y}}{{\partial t^2}} - \gamma \frac{{\partial y}}{{\partial t}} -l^2 \frac{{\partial^4 y}}{{\partial x^4}} = 0
+        \frac {{\partial^2 y}} {{\partial x^2}} - \frac {{1}} {{c^2}} \frac {{\partial^2 y}} {{\partial t^2}} - \gamma
+        \frac {{\partial y}} {{\partial t}} -l^2 \frac {{\partial^4 y}} {{\partial x^4}} = 0
         \]
       </p>
       <p>
-        This equation describes the<span class="circle-sketch-highlight"> amplitude (\(y\))</span> of a wave on a string over both<span class="circle-sketch-highlight"> space (\(x\))</span> and <span class="circle-sketch-highlight">time (\(t\))</span>. Let's break down the components:
+        This equation describes the<span class="circle-sketch-highlight"> amplitude (\(y\))</span> of a wave on a string
+        over both<span class="circle-sketch-highlight"> space (\(x\))</span> and <span class="circle-sketch-highlight">time (\(t\))</span>.
+        Let's break down the components:
       </p>
       <ul>
         <li>\(c\): Speed of the wave [m/s]</li>
@@ -45,57 +48,30 @@
       <p>Discretizing the wave equation allows us to implement it numerically. The discrete form is given by:</p>
       <p ngNonBindable>
         \[
-        \frac{{y_{j+1}^{m} -2y_j^m + y_{j-1}^{m}}}{{\Delta x^2}} - \frac{{1}}{{c^2}}\frac{{y_j^{m+1} -2y_j^m + y_j^{m-1}}}{{\Delta t^2}} - \gamma \frac{{y_j^{m+1} - y_j^{m-1}}}{{2 \Delta t}} - l^2 \frac{{y_{j-2}^m -4y_{j-1}^m +6y_{j}^m -4y_{j+1}^m +y_{j+2}^m}}{{\Delta x^4}} = 0
+        \frac {{y_{j+1}^{m} -2y_j^m + y_{j-1}^{m}} } {{\Delta x^2}} - \frac {{1}} {{c^2}} \frac
+        {{y_j^{m+1} -2y_j^m + y_j^{m-1}} } {{\Delta t^2}} - \gamma \frac {{y_j^{m+1} - y_j^{m-1}} } {{2 \Delta t}} - l^2
+        \frac {{y_{j-2}^m -4y_{j-1}^m +6y_{j}^m -4y_{j+1}^m +y_{j+2}^m}} {{\Delta x^4}} = 0
         \]
       </p>
       <p>
-        This equation represents the evolution of the wave at <span class="circle-sketch-highlight">each point <strong>\(j\)</strong></span> and <span class="circle-sketch-highlight">time step <strong>\(m\)</strong></span>.
+        This equation represents the evolution of the wave at <span class="circle-sketch-highlight">each point <strong>\(j\)</strong></span>
+        and <span class="circle-sketch-highlight">time step <strong>\(m\)</strong></span>.
       </p>
     </div>
 
-    <div id="3. Smooth Operation and.." class="section">
-      <h2>Smooth Operation and Efficiency:</h2>
-      <p>The V8 configuration inherently provides balance, reducing vibrations during operation. With four cylinders on
-        each side firing in a balanced sequence, the engine achieves a level of smoothness that contributes to its
-        durability and longevity.</p>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <div class="console">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="language">
-            Javascript
-          </div>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">SmoothV8Engine </span><span
-          class="keyword">extends </span><span class="name">V8Engine</span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">super</span>();<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.balance = </span><span
-          class="display">"Smooth"</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          <span class="keyword">const </span><span class="variable">smoothV8Engine = </span><span
-          class="keyword">new </span><span class="name">SmoothV8Engine</span><span>();</span><br>
-          <span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`Engine balance: $&lcub;smoothEngine.balance&rcub;`</span>);<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>Engine balance: Smooth &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
-        </div>
-      </div>
+    <div id="3. Converting from Canvas.." class="section">
+      <h2>Converting from Canvas to String Coordinates:</h2>
+      <p ngNonBindable>
+        Since the string goes between 0 and 1 in "String Coordinates" \( (x_s, y_s) \), we can scale to the window
+        "canvas coordinates" \( (x_c, y_c) \) as follows:
+        \[
+        x_c = C_w \cdot x_s
+        \]
+        \[
+        y_c = C_w \cdot y_s + \frac {{C_h}} {{2}}
+        \]
+        where \( C_w \) and \( C_h \) are the width and height of the canvas in pixels.
+      </p>
     </div>
 
     <div id="4. Torque Across the.." class="section">

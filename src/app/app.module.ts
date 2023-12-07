@@ -14,6 +14,9 @@ import { WaveSimulationContComponent } from './components/js/wave-simulation/wav
 import { PythonComponent } from './components/python/python.component';
 import { GeographicAnalysisComponent } from './components/python/geographic-analysis/geographic-analysis.component';
 import { GeographicAnalysisContComponent } from './components/python/geographic-analysis/geographic-analysis-cont/geographic-analysis-cont.component';
+import { CssComponent } from './components/css/css.component';
+import { CssVsScssComponent } from './components/css/css-vs-scss/css-vs-scss.component';
+import { CssVsScssContComponent } from './components/css/css-vs-scss/css-vs-scss-cont/css-vs-scss-cont.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { GeographicAnalysisContComponent } from './components/python/geographic-
     WaveSimulationContComponent,
     PythonComponent,
     GeographicAnalysisComponent,
-    GeographicAnalysisContComponent
+    GeographicAnalysisContComponent,
+    CssComponent,
+    CssVsScssComponent,
+    CssVsScssContComponent
   ],
   imports: [
     BrowserModule,

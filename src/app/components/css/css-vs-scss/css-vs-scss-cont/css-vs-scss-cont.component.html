@@ -24,10 +24,10 @@
     </div>
 
     <div id="1. CSS3: A Glimpse of.." class="section">
-      <h2>The V8 Configuration:</h2>
-      <p>At the heart of a V8 engine is its unique V-shaped layout, featuring four cylinders on each side. This
-        configuration optimizes space, allowing for a more compact and lightweight design while accommodating a larger
-        number of cylinders compared to other engine layouts.</p>
+      <h2>CSS3: A Glimpse of Standard Styling</h2>
+      <p>CSS3, the latest iteration of CSS, brings a host of new features and improvements. It empowers developers to
+        create visually appealing and responsive designs. However, as projects expand, managing styles in CSS3 becomes
+        challenging due to the absence of advanced features like variables and nesting.</p>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -36,37 +36,21 @@
             <div class="circle"></div>
           </div>
           <div class="language">
-            Javascript
+            CSS
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">V8Engine </span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span class="variable">.cylindersPerBank = </span><span
-          class="initializer">4</span>;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.banks = </span><span
-          class="initializer">2</span>;<span class="comment"> // V-shaped configuration</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span class="variable">.totalCylinders = </span><span
-          class="initializer">this</span><span class="variable">cylindersPerBank * </span><span
-          class="initializer">this</span><span class="variable">.banks;</span><br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
+          <span class="comment">/* Basic CSS3 Styles */</span><br>
+          <span>body &lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-family</span>: <span class="display">"Helvetica Neue"</span><span>, Helvetica, Arial, sans-serif;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="initializer">#f0f0f0</span>;<br>
           <span>&rcub;</span><br><br>
-          <span class="comment">// Example usage</span><br>
-          <span class="keyword">const </span><span class="variable">v8Engine = </span><span
-          class="keyword">new </span><span class="name">V8Engine</span><span>();</span><br>
-          <span class="initializer">console</span>.<span class="span name">log</span>(<span class="display">`Number of cylinders: $&lcub;v8Engine.totalCylinders&rcub;`</span>);<br>
-        </div>
-      </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>Number of cylinders: <span class="keyword">8</span> &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
+          <span class="comment">/* Media Query in CSS3 */</span><br>
+          <span class="keyword">@media </span>screen <span class="keyword">and </span>(<span class="display">min-width</span>: <span class="initializer">768px</span>)<span>&lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span>body &lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="initializer">16px</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
+          <span>&rcub;</span><br>
         </div>
       </div>
     </div>

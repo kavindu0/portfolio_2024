@@ -360,13 +360,21 @@ body {
 
   .where-to-next-banner{
     height: 100%;
-    max-width: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    position: relative;
 
     img{
       width: 100%;
+      filter: brightness(50%);
+    }
+    .banner-image-supporter{
+      position: absolute;
+      left: -20px;
+      bottom: 0;
+      width: 80%;
+      animation: clickHere 1s infinite;
     }
   }
 }

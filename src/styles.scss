@@ -315,6 +315,7 @@ body {
   position:relative;
   //left:0.5em;
   font-weight: 500;
+  white-space: nowrap;
 }
 .circle-sketch-highlight:before, .circle-sketch-highlight:after{
   content:"";
@@ -348,6 +349,7 @@ body {
   margin-left: 15px;
   font-weight: 500;
   z-index: 2;
+  white-space: nowrap;
 }
 .realistic-marker-highlight:before{
   content:"";

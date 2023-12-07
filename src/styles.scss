@@ -103,6 +103,12 @@ body {
   }
   .note-title-content{
     width: 100%;
+    min-height: calc(100vh - 90px);
+    background-image: url("assets/images/logo-2.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
 
     ul {
       list-style: none;

@@ -17,6 +17,8 @@ import { GeographicAnalysisContComponent } from './components/python/geographic-
 import { CssComponent } from './components/css/css.component';
 import { CssVsScssComponent } from './components/css/css-vs-scss/css-vs-scss.component';
 import { CssVsScssContComponent } from './components/css/css-vs-scss/css-vs-scss-cont/css-vs-scss-cont.component';
+import { MlComponent } from './components/python/ml/ml.component';
+import { MlContComponent } from './components/python/ml/ml-cont/ml-cont.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CssVsScssContComponent } from './components/css/css-vs-scss/css-vs-scss
     GeographicAnalysisContComponent,
     CssComponent,
     CssVsScssComponent,
-    CssVsScssContComponent
+    CssVsScssContComponent,
+    MlComponent,
+    MlContComponent
   ],
   imports: [
     BrowserModule,

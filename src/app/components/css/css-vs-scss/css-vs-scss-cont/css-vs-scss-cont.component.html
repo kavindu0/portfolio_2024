@@ -42,13 +42,16 @@
         <div class="code-snippet-wrapper">
           <span class="comment">/* Basic CSS3 Styles */</span><br>
           <span>body &lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="display">font-family</span>: <span class="display">"Helvetica Neue"</span><span>, Helvetica, Arial, sans-serif;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-family</span>: <span
+          class="display">"Helvetica Neue"</span><span>, Helvetica, Arial, sans-serif;</span><br>
           &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="initializer">#f0f0f0</span>;<br>
           <span>&rcub;</span><br><br>
           <span class="comment">/* Media Query in CSS3 */</span><br>
-          <span class="keyword">@media </span>screen <span class="keyword">and </span>(<span class="display">min-width</span>: <span class="initializer">768px</span>)<span>&lcub;</span><br>
+          <span class="keyword">@media </span>screen <span class="keyword">and </span>(<span
+          class="display">min-width</span>: <span class="initializer">768px</span>)<span>&lcub;</span><br>
           &nbsp;&nbsp;&nbsp;<span>body &lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="initializer">16px</span>;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span
+          class="initializer">16px</span>;<br>
           &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
           <span>&rcub;</span><br>
         </div>
@@ -56,11 +59,10 @@
     </div>
 
     <div id="2. SCSS: Elevating the.." class="section">
-      <h2>Power and Performance:</h2>
-      <p>V8 engines are synonymous with power and performance. The increased number of cylinders and higher displacement
-        result in a substantial power output. This characteristic makes V8 engines a preferred choice for
-        high-performance
-        vehicles, including sports cars and muscle cars.</p>
+      <h2>SCSS: Elevating the Stylesheet Game</h2>
+      <p>SCSS, a preprocessor scripting language, extends CSS3 by introducing features like variables, nesting, and
+        mixins. These additions bring a level of organization and reusability that greatly enhances the maintainability
+        of styles in larger projects.</p>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -69,40 +71,23 @@
             <div class="circle"></div>
           </div>
           <div class="language">
-            Javascript
+            SCSS
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">class </span><span class="name">HighPerformanceVehicle </span><span>&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">constructor</span><span>(engine)&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span><span
-          class="variable">.engine = </span><span
-          class="variable">engine</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br><br>
-          &nbsp;&nbsp;&nbsp;<span class="name">accelerate</span><span>()&lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span
-          class="span name">log</span>(<span
-          class="display">`The $&lcub;<span
-          class="initializer">this</span>.engine&rcub; is unleashing its power!`</span>);<br>
+          <span class="comment">/* Basic SCSS Styles */</span><br>
+          <span class="initializer">$body-font</span>: <span class="display">"Helvetica Neue"</span>, sans-serif;<br>
+          <span class="initializer">$body-bg</span>: <span class="initializer">#f0f0f0</span>;<br><br>
+          <span>body &lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-family</span>: <span class="initializer">$body-font</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="initializer">$body-bg</span>;<br><br>
+          &nbsp;&nbsp;&nbsp;<span class="comment">/* Nesting in SCSS */</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">@media </span>screen <span class="keyword">and </span>(<span class="display">min-width</span>: <span class="initializer">768px</span>)&lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="initializer">16px</span>;<br>
           &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
-          <span>&rcub;</span><br><br>
-          <span class="comment">// Example usage</span><br>
-          <span class="keyword">const </span><span class="variable">highPerformanceCar = </span><span
-          class="keyword">new </span><span class="name">HighPerformanceVehicle</span><span>(<span class="display">"V8 Engine"</span>);</span><br>
-          <span class="variable">highPerformanceCar.</span><span class="name">accelerate</span>();<br>
-        </div>
+          <span>&rcub;</span><br>
       </div>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <span class="variable">Console</span>
-        </div>
-        <div class="code-snippet-wrapper">
-          <div class="d-flex align-items-center">
-            <div><span> > </span><span>The V8 Engine is unleashing its power! &nbsp;</span></div>
-            <div class="cursor-end-point"></div>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
 
     <div id="3. Advantages of SCSS.." class="section">

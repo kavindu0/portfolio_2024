@@ -15,6 +15,9 @@ import {GeographicAnalysisComponent} from "./components/python/geographic-analys
 import {
   GeographicAnalysisContComponent
 } from "./components/python/geographic-analysis/geographic-analysis-cont/geographic-analysis-cont.component";
+import {CssComponent} from "./components/css/css.component";
+import {CssVsScssComponent} from "./components/css/css-vs-scss/css-vs-scss.component";
+import {CssVsScssContComponent} from "./components/css/css-vs-scss/css-vs-scss-cont/css-vs-scss-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -35,6 +38,12 @@ const routes: Routes = [
       {path: '', redirectTo: '/geographic-analysis', pathMatch: 'full'},
       {path: 'geographic-analysis', component: GeographicAnalysisComponent, children:[
           {path: '', component: GeographicAnalysisContComponent}
+      ]}
+  ]},
+  { path: 'css', component: CssComponent, children:[
+      {path: '', redirectTo: '/css-vs-scss', pathMatch: 'full'},
+      {path: 'css-vs-scss', component: CssVsScssComponent, children:[
+          {path: '', component: CssVsScssContComponent}
       ]}
   ]},
 ];

@@ -65,33 +65,29 @@
     </div>
 
     <div id="‎ ‎ ➥ The RL Process:" class="section">
-      <h3>Key Components:</h3>
+      <h3>The RL Process:</h3>
       <ol>
-        <li><strong>Input Data:</strong></li>
+        <li><strong>Observation:</strong></li>
         <ul>
-          <li>Unlabeled data devoid of predefined outputs or categories serves as the input for unsupervised learning
-            algorithms.
+          <li>The agent observes the current state of the environment.
           </li>
         </ul>
-        <li><strong>Objectives:</strong></li>
+        <li><strong>Decision:</strong></li>
         <ul>
-          <li>The primary goal is to uncover hidden patterns, groupings, or structures within the data.
+          <li>The agent selects an action based on its current policy.
           </li>
         </ul>
-        <li><strong>Types of Unsupervised Learning:</strong></li>
+        <li><strong>Action:</strong></li>
         <ul>
-          <li><strong>Clustering:</strong></li>
-          <ul>
-            <li>Objective: Group similar data points together based on inherent similarities.</li>
-            <li>Example: Customer segmentation in marketing, image segmentation in computer vision.</li>
-            <li>Algorithms: K-means, hierarchical clustering, DBSCAN.</li>
-          </ul>
-          <li><strong>Dimensionality Reduction:</strong></li>
-          <ul>
-            <li>Objective: Reduce the number of features while retaining meaningful information.</li>
-            <li>Example: Principal Component Analysis (PCA), t-Distributed Stochastic Neighbor Embedding (t-SNE).</li>
-            <li>Applications: Visualization, noise reduction.</li>
-          </ul>
+          <li>The chosen action is executed in the environment.</li>
+        </ul>
+        <li><strong>Feedback:</strong></li>
+        <ul>
+          <li>The agent receives feedback in the form of a reward or penalty.</li>
+        </ul>
+        <li><strong>Learning:</strong></li>
+        <ul>
+          <li>The agent adjusts its policy based on the received feedback to improve future decisions.</li>
         </ul>
       </ol>
     </div>

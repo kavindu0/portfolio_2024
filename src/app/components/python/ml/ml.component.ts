@@ -73,6 +73,7 @@ export class MlComponent {
         '5. Challenges and Considerations:',
         '6. Future Directions and..',
         'Conclusion:',
+        'References:',
       ];
       this.scrollService.scrollToSection('Unveiling the Power of..');
     }

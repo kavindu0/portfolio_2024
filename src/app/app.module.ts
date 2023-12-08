@@ -19,6 +19,7 @@ import { CssVsScssComponent } from './components/css/css-vs-scss/css-vs-scss.com
 import { CssVsScssContComponent } from './components/css/css-vs-scss/css-vs-scss-cont/css-vs-scss-cont.component';
 import { MlComponent } from './components/python/ml/ml.component';
 import { MlContComponent } from './components/python/ml/ml-cont/ml-cont.component';
+import { SupervisedLearningComponent } from './components/python/ml/ml-cont/supervised-learning/supervised-learning.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MlContComponent } from './components/python/ml/ml-cont/ml-cont.componen
     CssVsScssComponent,
     CssVsScssContComponent,
     MlComponent,
-    MlContComponent
+    MlContComponent,
+    SupervisedLearningComponent
   ],
   imports: [
     BrowserModule,

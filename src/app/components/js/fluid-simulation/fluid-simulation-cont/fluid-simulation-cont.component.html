@@ -33,12 +33,26 @@
         using analogous methods. In the realm of fluid simulation, we often encounter terms like Eulerian and
         Lagrangian, named after the pioneering mathematicians Leonhard Euler and Joseph-Louis Lagrange.</p>
       <ul>
-        <li><strong>Eulerian Method: </strong>This grid-based approach, attributed to Euler, involves dividing the fluid domain into a grid and analyzing properties at fixed points.</li>
-        <li><strong>Lagrangian Method: </strong>Named after Lagrange, this grid-free approach represents the fluid as particles, allowing them to move freely within the simulation.</li>
+        <li><strong>Eulerian Method: </strong>This grid-based approach, attributed to Euler, involves dividing the fluid
+          domain into a grid and analyzing properties at fixed points.
+        </li>
+        <li><strong>Lagrangian Method: </strong>Named after Lagrange, this grid-free approach represents the fluid as
+          particles, allowing them to move freely within the simulation.
+        </li>
       </ul>
     </div>
 
-    <div class="section" id="‎ ‎ ➥ Essential Physics.."></div>
+    <div class="section" id="‎ ‎ ➥ Essential Physics..">
+      <h3>Essential Physics Concepts</h3>
+      <p>Incompressible Fluids</p>
+      <p>Fluids that experience negligible changes in volume under pressure are termed incompressible. Water is a
+        classic example, and this assumption simplifies fluid simulation. In the code snippet, an incompressible fluid
+        is emulated, and the concept of compression is illustrated.</p>
+      <p>Inviscid Fluids</p>
+      <p>Inviscid fluids are those with zero viscosity, implying no internal friction. While a good approximation for
+        gases and water, this assumption simplifies simulation. The code snippet reflects this by assuming zero
+        viscosity in the fluid dynamics equations.</p>
+    </div>
 
     <div class="section" id="‎ ‎ ➥ Fluid Simulation:"></div>
 

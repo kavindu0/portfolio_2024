@@ -107,7 +107,6 @@ export class MlComponent {
         '3. Real-World Applications:',
         '4. Challenges and Considerations:',
         '5. Future Directions and..',
-        '6. Future Directions and..',
         'Conclusion:',
       ];
       this.scrollService.scrollToSection('The Comprehensive..');

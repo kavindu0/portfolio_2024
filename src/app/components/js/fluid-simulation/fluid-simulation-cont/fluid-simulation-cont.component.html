@@ -88,13 +88,23 @@
     <div class="section" id="‎ ‎ ➥ Fluid Simulation Steps">
       <h3>Fluid Simulation Steps</h3>
       <ol>
-        <li><strong>Modify Velocity Values: </strong>Adjust velocity values, e.g., adding gravity to simulate external forces.</li>
-        <li><strong>Move the Velocity Field (Advection): </strong>Displace the velocity field based on its own values, simulating the movement of fluid particles.</li>
-        <li><strong>Make the Fluid Incompressible (Projection): </strong>Ensure incompressibility by solving for pressure and updating velocity accordingly.</li>
+        <li><strong>Modify Velocity Values: </strong>Adjust velocity values, e.g., adding gravity to simulate external
+          forces.
+        </li>
+        <li><strong>Move the Velocity Field (Advection): </strong>Displace the velocity field based on its own values,
+          simulating the movement of fluid particles.
+        </li>
+        <li><strong>Make the Fluid Incompressible (Projection): </strong>Ensure incompressibility by solving for
+          pressure and updating velocity accordingly.
+        </li>
       </ol>
     </div>
 
-    <div class="section" id="‎ ‎ ➥ Divergence and.."></div>
+    <div class="section" id="‎ ‎ ➥ Divergence and..">
+      <h3>Divergence and Incompressibility</h3>
+      <p>Divergence, representing the total outflow of a fluid, is crucial for enforcing incompressibility. The code
+        snippet employs a technique to calculate and adjust velocity values, maintaining incompressibility.</p>
+    </div>
 
     <div class="section" id="‎ ‎ ➥ Handling Obstacles.."></div>
 

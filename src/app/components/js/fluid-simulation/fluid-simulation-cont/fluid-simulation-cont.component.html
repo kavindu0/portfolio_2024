@@ -68,27 +68,27 @@
     </div>
 
     <div class="section" id="2. Smoothed Particle Hydrodynamics..">
-      <h2>Discrete Form of the Equation:</h2>
-      <p>Discretizing the wave equation allows us to implement it numerically. The discrete form is given by:</p>
-      <p ngNonBindable>
-        \[
-        \frac {{y_{j+1}^{m} -2y_j^m + y_{j-1}^{m}} } {{\Delta x^2}} - \frac {{1}} {{c^2}} \frac
-        {{y_j^{m+1} -2y_j^m + y_j^{m-1}} } {{\Delta t^2}} - \gamma \frac {{y_j^{m+1} - y_j^{m-1}} } {{2 \Delta t}} - l^2
-        \frac {{y_{j-2}^m -4y_{j-1}^m +6y_{j}^m -4y_{j+1}^m +y_{j+2}^m}} {{\Delta x^4}} = 0
-        \]
-      </p>
-      <p>
-        This equation represents the evolution of the wave at <span class="circle-sketch-highlight">each point <strong>\(j\)</strong></span>
-        and <span class="circle-sketch-highlight">time step <strong>\(m\)</strong></span>.
-      </p>
+      <h2>Smoothed Particle Hydrodynamics (SPH)</h2>
     </div>
 
-    <div class="section" id="‎ ‎ ➥ Introduction to SPH"></div>
+    <div class="section" id="‎ ‎ ➥ Introduction to SPH">
+      <h3>Introduction to SPH</h3>
+      <p>Smoothed Particle Hydrodynamics (SPH) is a meshless particle method used for fluid simulation. Unlike
+        grid-based approaches, SPH represents the fluid as discrete particles, each possessing properties like velocity,
+        density, and pressure. The key idea is to compute fluid behavior by interpolating values from neighboring
+        particles.</p>
+    </div>
+
     <div class="section" id="‎ ‎ ➥ Fluid as a Velocity.."></div>
+
     <div class="section" id="‎ ‎ ➥ Fluid Simulation Steps"></div>
+
     <div class="section" id="‎ ‎ ➥ Divergence and.."></div>
+
     <div class="section" id="‎ ‎ ➥ Handling Obstacles.."></div>
+
     <div class="section" id="‎ ‎ ➥ Solving the Grid:"></div>
+
     <div class="section" id="‎ ‎ ➥ Measuring Pressure.."></div>
 
     <div class="section" id="3. Advection: Moving Fluid..">

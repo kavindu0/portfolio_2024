@@ -22,6 +22,8 @@ import { MlContComponent } from './components/python/ml/ml-cont/ml-cont.componen
 import { SupervisedLearningComponent } from './components/python/ml/ml-cont/supervised-learning/supervised-learning.component';
 import { UnsupervisedLearningComponent } from './components/python/ml/ml-cont/unsupervised-learning/unsupervised-learning.component';
 import { ReinforcementLearningComponent } from './components/python/ml/ml-cont/reinforcement-learning/reinforcement-learning.component';
+import { FluidSimulationComponent } from './components/js/fluid-simulation/fluid-simulation.component';
+import { FluidSimulationContComponent } from './components/js/fluid-simulation/fluid-simulation-cont/fluid-simulation-cont.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { ReinforcementLearningComponent } from './components/python/ml/ml-cont/r
     MlContComponent,
     SupervisedLearningComponent,
     UnsupervisedLearningComponent,
-    ReinforcementLearningComponent
+    ReinforcementLearningComponent,
+    FluidSimulationComponent,
+    FluidSimulationContComponent
   ],
   imports: [
     BrowserModule,

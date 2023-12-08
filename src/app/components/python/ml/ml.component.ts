@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {ChangeDetectorRef, Component} from '@angular/core';
 import {ScrollService} from "../../../services/scroll.service";
-import {Router} from "@angular/router";
+import {NavigationEnd, Router} from "@angular/router";
+import {filter} from "rxjs";
 
 @Component({
   selector: 'app-ml',
@@ -12,7 +13,7 @@ export class MlComponent {
   sections:any = [];
   activeSection: string | any;
 
-  constructor(private scrollService: ScrollService, private router: Router) {
+  constructor(private scrollService: ScrollService, private router: Router, private cdr: ChangeDetectorRef) {
   }
 
   ngOnInit(): void {
@@ -20,7 +21,16 @@ export class MlComponent {
       this.activeSection = section;
     });
 
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        // Reload the page when the route changes
+        window.location.reload();
+      });
+
     if (this.router.url === '/python/machine-learning') {
+      this.cdr.detectChanges();
+      window.scrollTo(0, 0);
       this.sections = [
         'The Comprehensive..',
         'Introduction:',
@@ -43,8 +53,28 @@ export class MlComponent {
       ];
       this.scrollService.scrollToSection('The Comprehensive..');
     }
-    if (this.router.url === '/python/geographic-analysis/') {
-      this.scrollService.scrollToSection('Introduction:');
+    if (this.router.url === '/python/machine-learning/supervised-learning') {
+      this.cdr.detectChanges();
+      window.scrollTo(0, 0);
+      this.sections = [
+        'Unveiling the Power of..',
+        'Introduction:',
+        '1. Understanding Supervised..',
+        '‎ ‎ ➥ The Essence of Super..',
+        '‎ ‎ ➥ Components of Super..',
+        '2. Types of Supervised..',
+        '‎ ‎ ➥ Classification:',
+        '‎ ‎ ➥ Regression:',
+        '3. Key Concepts and Techniques:',
+        '‎ ‎ ➥ Model Evaluation..',
+        '‎ ‎ ➥ Overfitting and..',
+        '‎ ‎ ➥ Cross-Validation:',
+        '4. Applications of Supervised..',
+        '5. Challenges and Considerations:',
+        '6. Future Directions and..',
+        'Conclusion:',
+      ];
+      this.scrollService.scrollToSection('Unveiling the Power of..');
     }
   }
 

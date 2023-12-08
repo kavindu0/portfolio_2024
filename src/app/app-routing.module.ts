@@ -20,6 +20,9 @@ import {CssVsScssComponent} from "./components/css/css-vs-scss/css-vs-scss.compo
 import {CssVsScssContComponent} from "./components/css/css-vs-scss/css-vs-scss-cont/css-vs-scss-cont.component";
 import {MlComponent} from "./components/python/ml/ml.component";
 import {MlContComponent} from "./components/python/ml/ml-cont/ml-cont.component";
+import {
+  SupervisedLearningComponent
+} from "./components/python/ml/ml-cont/supervised-learning/supervised-learning.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -42,7 +45,8 @@ const routes: Routes = [
           {path: '', component: GeographicAnalysisContComponent}
       ]},
       {path: 'machine-learning', component: MlComponent, children:[
-          {path: '', component: MlContComponent}
+          {path: '', component: MlContComponent},
+          {path: 'supervised-learning', component: SupervisedLearningComponent}
       ]}
   ]},
   { path: 'css', component: CssComponent, children:[
@@ -54,7 +58,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes, {useHash: true, onSameUrlNavigation: 'reload', scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

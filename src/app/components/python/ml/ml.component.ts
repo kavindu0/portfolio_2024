@@ -78,23 +78,17 @@ export class MlComponent {
     if (this.router.url === '/python/machine-learning/unsupervised-learning') {
       window.scrollTo(0, 0);
       this.sections = [
-        'The Comprehensive..',
+        'Unraveling the Mysteries..',
         'Introduction:',
-        '1. Unveiling the Basics:',
-        '‎ ‎ ➥ Unraveling the Essence..',
-        '‎ ‎ ➥ Navigating Types of..',
-        '2. Key Concepts Illuminated:',
-        '‎ ‎ ➥ Pioneering Feature..',
-        '‎ ‎ ➥ Charting Model..',
-        '‎ ‎ ➥ Navigating Overfitting..',
-        '3. A Sojourn into Advanced..',
-        '‎ ‎ ➥ The Depths of Deep..',
-        '‎ ‎ ➥ Harnessing Transfer..',
-        '‎ ‎ ➥ The Advancements in..',
-        '4. The Practical Frontier:',
-        '‎ ‎ ➥ Selecting the Right..',
-        '‎ ‎ ➥ Crafting Real-world..',
-        '‎ ‎ ➥ Sustaining a State of..',
+        '1. The Essence of Unsupervised..',
+        '‎ ‎ ➥ Defining Unsupervised..',
+        '‎ ‎ ➥ Key Components:',
+        '2. Techniques in Unsupervised..',
+        '‎ ‎ ➥ Clustering Techniques:',
+        '‎ ‎ ➥ Dimensionality Reduct..',
+        '3. Applications of Unsupervised..',
+        '4. Challenges and Considerations:',
+        '5. Future Directions and..',
         'Conclusion:',
       ];
       this.scrollService.scrollToSection('The Comprehensive..');

@@ -26,6 +26,9 @@ import {
 import {
   UnsupervisedLearningComponent
 } from "./components/python/ml/ml-cont/unsupervised-learning/unsupervised-learning.component";
+import {
+  ReinforcementLearningComponent
+} from "./components/python/ml/ml-cont/reinforcement-learning/reinforcement-learning.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -51,6 +54,7 @@ const routes: Routes = [
           {path: '', component: MlContComponent},
           {path: 'supervised-learning', component: SupervisedLearningComponent},
           {path: 'unsupervised-learning', component: UnsupervisedLearningComponent},
+          {path: 'reinforcement-learning', component: ReinforcementLearningComponent}
       ]}
   ]},
   { path: 'css', component: CssComponent, children:[

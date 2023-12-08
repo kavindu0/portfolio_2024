@@ -93,6 +93,25 @@ export class MlComponent {
       ];
       this.scrollService.scrollToSection('The Comprehensive..');
     }
+    if (this.router.url === '/python/machine-learning/reinforcement-learning') {
+      window.scrollTo(0, 0);
+      this.sections = [
+        'Mastering the Art of..',
+        'Introduction:',
+        '1. The Essence of Reinforcement..',
+        '‎ ‎ ➥ Defining Reinforcement..',
+        '‎ ‎ ➥ Key Components:',
+        '‎ ‎ ➥ The RL Process:',
+        '‎ ‎ ➥ Types of Reinforcement..',
+        '2. Essential Algorithms:',
+        '3. Real-World Applications:',
+        '4. Challenges and Considerations:',
+        '5. Future Directions and..',
+        '6. Future Directions and..',
+        'Conclusion:',
+      ];
+      this.scrollService.scrollToSection('The Comprehensive..');
+    }
 
     this.cdr.detectChanges();
   }

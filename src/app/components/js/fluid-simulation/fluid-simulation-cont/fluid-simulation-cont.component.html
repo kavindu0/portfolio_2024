@@ -126,18 +126,9 @@
     </div>
 
     <div class="section" id="3. Advection: Moving Fluid..">
-      <h2>Converting from Canvas to String Coordinates:</h2>
-      <p ngNonBindable>
-        Since the string goes between 0 and 1 in "String Coordinates" \( (x_s, y_s) \), we can scale to the window
-        "canvas coordinates" \( (x_c, y_c) \) as follows:
-        \[
-        x_c = C_w \cdot x_s
-        \]
-        \[
-        y_c = C_w \cdot y_s + \frac {{C_h}} {{2}}
-        \]
-        where \( C_w \) and \( C_h \) are the width and height of the canvas in pixels.
-      </p>
+      <h2>Advection: Moving Fluid Properties</h2>
+      <p>Advection involves moving fluid properties, such as velocity and density, through the simulation domain.
+        Semi-Lagrangian advection is employed to update velocity values based on the fluid's movement.</p>
     </div>
 
     <div class="section" id="‎ ‎ ➥ Smoke Advection and.."></div>

@@ -29,6 +29,10 @@ import {
 import {
   ReinforcementLearningComponent
 } from "./components/python/ml/ml-cont/reinforcement-learning/reinforcement-learning.component";
+import {FluidSimulationComponent} from "./components/js/fluid-simulation/fluid-simulation.component";
+import {
+  FluidSimulationContComponent
+} from "./components/js/fluid-simulation/fluid-simulation-cont/fluid-simulation-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -43,6 +47,9 @@ const routes: Routes = [
       ]},
       {path: 'wave', component: WaveSimulationComponent, children:[
           {path: '', component: WaveSimulationContComponent}
+      ]},
+      {path: 'fluid', component: FluidSimulationComponent, children:[
+          {path: '', component: FluidSimulationContComponent}
       ]}
     ]},
   { path: 'python', component: PythonComponent, children:[

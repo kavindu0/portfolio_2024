@@ -9,12 +9,12 @@ import {ScrollService} from "../../../services/scroll.service";
 export class WhyJsComponent {
 
   sections = [
-    'Simulating Damped Waves with..',
+    'JavaScript: A Swiss Army Knife..',
     'Introduction:',
-    '1. The True Wave Equation:',
-    '2. Discrete Form of the..',
-    '3. Converting from Canvas..',
-    '4. JavaScript Implementation:',
+    '1. Web Development with JavaScript',
+    '2. Machine Learning and Deep..',
+    '3. 2D Game Development with..',
+    '4. Advanced Mathematical and..',
     'Conclusion:',
     'Reference:',
   ];

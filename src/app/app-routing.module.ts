@@ -33,6 +33,8 @@ import {FluidSimulationComponent} from "./components/js/fluid-simulation/fluid-s
 import {
   FluidSimulationContComponent
 } from "./components/js/fluid-simulation/fluid-simulation-cont/fluid-simulation-cont.component";
+import {WhyJsComponent} from "./components/js/why-js/why-js.component";
+import {WhyJsContComponent} from "./components/js/why-js/why-js-cont/why-js-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -50,6 +52,9 @@ const routes: Routes = [
       ]},
       {path: 'fluid', component: FluidSimulationComponent, children:[
           {path: '', component: FluidSimulationContComponent}
+      ]},
+      {path: 'why-js', component: WhyJsComponent, children:[
+          {path: '', component: WhyJsContComponent}
       ]}
     ]},
   { path: 'python', component: PythonComponent, children:[

@@ -29,7 +29,31 @@
       <p>JavaScript is the backbone of modern web interactivity. With the advent of frameworks like React, Angular, and
         Vue.js, it has become the go-to language for building dynamic, responsive, and interactive user interfaces. </p>
       <p><strong>Example: React Component</strong></p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Jsx
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">import </span><span class="name">React </span>, &lcub;useState&rcub; <span class="keyword">from</span> <span class="dispaly">"react"</span>;<br><br>
+          <span class="keyword">const </span><span class="name">Counter </span>= () => &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">const </span><span class="variable">[count, setCount] = </span><span class="name">useState</span> (<span class="initializer">0</span>);<br><br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">return </span>(<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div&gt;</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;p>Count: &lcub;count&rcub;&lt;/p></span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;button <span class="initializer">onClick</span> = &lcub;() => setCount(count + 1)}&gt;Increment&lt;/button&gt;</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;/div&gt;</span><br>
+          &nbsp;&nbsp;&nbsp;);<br>
+          <span>&rcub;</span><br><br>
+          <span class="keyword">export default </span><span class="name">Counter</span>;<br>
+        </div>
+      </div>
 
       <h3>Asynchronous Power with Node.js</h3>
       <p>Node.js, built on the V8 JavaScript runtime, extends JavaScript to the server-side. This asynchronous runtime

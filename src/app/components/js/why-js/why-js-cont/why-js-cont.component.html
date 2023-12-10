@@ -162,7 +162,44 @@
       <p>JavaScript, coupled with the HTML5 Canvas API, empowers developers to create engaging 2D games directly in the
         browser. Libraries like Phaser.js provide game development frameworks to simplify the process.</p>
       <p><strong>Example: Phaser.js Game Initialization</strong></p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Javascript
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">const </span>config = &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">type</span>: <span class="name">Parser</span>.AUTO,<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">width</span>: <span class="initializer">800</span>,<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">height</span>: <span class="initializer">600</span>,<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">scene</span>: &lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">preload</span>: preload,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">create</span>: create,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">update</span>: update<br>
+          &nbsp;&nbsp;&nbsp;&rcub;<br>
+          &rcub;;<br><br>
+
+          <span class="keyword">const </span>game = <span class="keyword">new</span> <span class="name">Phaser</span>.<span class="name">Game</span>(config);<br><br>
+
+          <span class="keyword">function </span><span class="name">preload</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="comment">// Load game assets</span><br>
+          &rcub;;<br><br>
+
+          <span class="keyword">function </span><span class="name">create</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="comment">// Set up initial game state</span><br>
+          &rcub;;<br><br>
+
+          <span class="keyword">function </span><span class="name">update</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="comment">// Update game state</span><br>
+          &rcub;;<br>
+        </div>
+      </div>
     </div>
 
     <div class="section" id="4. Advanced Mathematical and..">

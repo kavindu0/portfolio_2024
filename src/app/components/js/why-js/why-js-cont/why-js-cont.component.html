@@ -105,7 +105,30 @@
         models directly in JavaScript. It supports both machine learning and deep learning, enabling tasks like image
         classification, natural language processing, and more.</p>
       <p><strong>Example: Image Classification with MobileNet</strong></p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Html
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          &lt;script <span class="initializer">src</span>=<span class="display">"https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"</span>&gt;&lt;/script&gt;<br>
+          &lt;script <span class="initializer">src</span>=<span class="display">"https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"</span>&gt;&lt;/script&gt;<br><br>
+          &lt;script&gt;<br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">async function </span><span class="name">classifyImage</span>()&lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>image = <span class="initializer">document</span>.<span class="name">getElementById</span>(<span class="display">'input-image'</span>);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>model = <span class="keyword">await</span> mobilenet.<span class="name">load</span>();<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>predictions = <span class="keyword">await</span> model.<span class="name">classify</span>(image);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span class="name">log</span>(predictions);<br>
+          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
+          &lt;/script&gt;<br>
+        </div>
+      </div>
 
       <h3>Node.js and Machine Learning</h3>
       <p>On the server side, libraries like Brain.js and Synaptic facilitate machine learning tasks. Node.js becomes a

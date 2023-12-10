@@ -208,7 +208,24 @@
       <p>For advanced mathematical computations, Math.js provides a comprehensive library. It supports everything from
         basic arithmetic to linear algebra, making it a valuable tool for simulations and mathematical modeling.</p>
       <p><strong>Example: Solving an Equation with Math.js</strong></p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Javascript
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">const </span>math = <span class="import">require</span>(<span class="display">'mathjs'</span>);<br><br>
+          <span class="keyword">const </span>equation = math.<span class="name">parse</span>(<span class="display">'x^2 - 4'</span>);<br>
+          <span class="keyword">const </span>solution = math.<span class="name">solve</span>(equation, <span class="display">'x'</span>);<br>
+          <span class="initializer">console</span>.<span class="name">log</span>(solution); <span class="comment">// Output: [ 2, -2 ]</span><br>
+        </div>
+      </div>
 
       <h3>Physics Simulations with p5.js</h3>
       <p>p5.js, a JavaScript library inspired by Processing, simplifies creative coding and physics simulations. It

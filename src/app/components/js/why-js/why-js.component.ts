@@ -16,7 +16,6 @@ export class WhyJsComponent {
     '3. 2D Game Development with..',
     '4. Advanced Mathematical and..',
     'Conclusion:',
-    'Reference:',
   ];
   activeSection: string | any;
 

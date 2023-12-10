@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./why-js-cont.component.scss']
 })
 export class WhyJsContComponent {
+  reactExampleResult: number = 0;
 
+  reactExample() {
+    this.reactExampleResult += 1;
+  }
 }

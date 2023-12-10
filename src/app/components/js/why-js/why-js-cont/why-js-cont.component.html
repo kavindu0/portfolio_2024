@@ -134,7 +134,26 @@
       <p>On the server side, libraries like Brain.js and Synaptic facilitate machine learning tasks. Node.js becomes a
         powerful tool for running server-side machine learning models.</p>
       <p><strong>Example: Sentiment Analysis with Brain.js</strong></p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Javascript
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">const </span>brain = <span class="import">require</span>(<span class="display">'brain.js'</span>);<br><br>
+          <span class="keyword">const </span>net = <span class="keyword">new</span> brain.<span class="name">NeuralNetwork</span>();<br>
+          net.<span class="name">train</span>([&lcub; <span class="initializer">input</span>: <span class="display">'I feel great'</span>, <span class="initializer">output</span>: <span class="display">'positive'</span>&rcub;]);<br><br>
+
+          <span class="keyword">const </span>output = net.<span class="name">run</span>(<span class="display">'I feel great'</span>);<br>
+          <span class="initializer">console</span>.<span class="name">log</span>(output); <span class="comment">// Output: &lcub; positive: 0.9999982118606567 &rcub;</span><br>
+        </div>
+      </div>
     </div>
 
     <div class="section" id="3. 2D Game Development with..">

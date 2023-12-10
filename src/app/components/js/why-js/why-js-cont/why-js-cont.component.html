@@ -231,7 +231,57 @@
       <p>p5.js, a JavaScript library inspired by Processing, simplifies creative coding and physics simulations. It
         provides an abstraction over the HTML5 Canvas API, allowing developers to focus on the simulation's logic.</p>
       <p><strong>Example: Simple Particle System Simulation</strong></p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Html
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          &lt;script <span class="initializer">src</span> = <span class="display">"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"</span>&gt;&lt;/script&gt;<br><br>
+
+          &lt;script&gt;<br>
+          <span class="keyword">let </span>particles = [];<br><br>
+          <span class="keyword">function </span><span class="name">setup</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="name">createCanvas</span>(<span class="initializer">600</span>, <span class="initializer">400</span>)<br>
+          &rcub;;<br><br>
+
+          <span class="keyword">function </span><span class="name">draw</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="name">background</span>(<span class="initializer">255</span>)<br><br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">for </span>(<span class="keyword">let </span>particle <span class="keyword">of </span>particles) &lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;particle.<span class="name">update</span>()<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;particle.<span class="name">display</span>()<br>
+          &nbsp;&nbsp;&nbsp;&rcub;<br>
+          &rcub;;<br><br>
+
+          <span class="keyword">function </span><span class="name">mousePressed</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;particles.<span class="name">push</span>(<span class="keyword">new </span><span class="name">Particle</span>(mouseX, mouseY));<br>
+          &rcub;;<br><br>
+
+          <span class="keyword">class </span><span class="name">Particle</span> &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">constructor</span>(x, y) &lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.x = x;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.y = y;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.size = <span class="initializer">10</span>;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.speed = <span class="initializer">1</span>;<br>
+          &nbsp;&nbsp;&nbsp;&rcub;<br><br>
+
+          &nbsp;&nbsp;&nbsp;<span class="keyword">function </span><span class="name">update</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.x += <span class="initializer">this</span>.speed;<br>
+          &nbsp;&nbsp;&nbsp;&rcub;<br><br>
+
+          &nbsp;&nbsp;&nbsp;<span class="keyword">function </span><span class="name">display</span>() &lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name">ellipse</span>(<span class="initializer">this</span>.x, <span class="initializer">this</span>.y, <span class="initializer">this</span>.size);<br>
+          &nbsp;&nbsp;&nbsp;&rcub;<br>
+          &rcub;;<br>
+          &lt;/script&gt;
+        </div>
+      </div>
     </div>
 
     <div class="section" id="Conclusion:">

@@ -62,7 +62,40 @@
         enables scalable and high-performance server-side applications, making JavaScript an ideal choice for full-stack
         development.</p>
       <p><strong>Example: Simple Node.js Server</strong></p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Javascript
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">const </span>http = <span class="import">require</span>(<span class="display">'http'</span>);<br><br>
+          <span class="keyword">const </span>server = http.<span class="name">createServer</span>((req, res) =&gt; &lcub;<br>
+          &nbsp;&nbsp;&nbsp;res.<span class="name">writeHead</span>(<span class="initializer">200</span>, &lcub;<span class="display">'Content-Type'</span>:<span class="display">'text/plain'</span>&rcub;);<br>
+          &nbsp;&nbsp;&nbsp;res.<span class="name">end</span>(<span class="display">'Hello World!\n'</span>);<br>
+          <span>&rcub;);</span><br><br>
+
+          <span class="keyword">const </span><span class="initializer">PORT </span>= <span class="Initializer">3000</span>;<br>
+          server.<span class="name">listen</span>(<span class="initializer">PORT</span>, () =&gt; &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span class="name">log</span>(<span class="display">`Server running at http://localhost:$&lcub;PORT}/`</span>);<br>
+        </div>
+      </div>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <span class="variable">Console</span>
+        </div>
+        <div class="code-snippet-wrapper">
+          <div class="d-flex align-items-center">
+            <div><span> > </span><span>Server running at http://localhost:<span class="keyword">3000</span> &nbsp;</span></div>
+            <div class="cursor-end-point"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section" id="2. Machine Learning and Deep..">

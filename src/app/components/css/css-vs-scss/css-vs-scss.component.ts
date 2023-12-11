@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ScrollService} from "../../../services/scroll.service";
 
 @Component({
@@ -6,7 +6,7 @@ import {ScrollService} from "../../../services/scroll.service";
   templateUrl: './css-vs-scss.component.html',
   styleUrls: ['./css-vs-scss.component.scss']
 })
-export class CssVsScssComponent {
+export class CssVsScssComponent implements OnInit{
 
   sections = [
     'CSS3 vs. SCSS: Navigating..',

@@ -1,1 +1,186 @@
-<p>css-var-cont works!</p>
+<div class="note-title-wrapper-header">
+  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+  <p><span routerLink="/home">Notes</span> / CSS / CCS3 vs SCSS</p>
+</div>
+<div class="container">
+  <div class="note-content">
+    <div class="banner">
+      <img src="assets/images/css/css%20vs%20scss.png" alt="css vs scss">
+    </div>
+    <div id="CSS3 vs. SCSS: Navigating.." class="section">
+      <h1>CSS3 vs. SCSS: Navigating the Seas of Stylesheets</h1>
+      <p class="note-tags"><span><strong>Tended:</strong> Dec 2023</span> <span><strong>Status:</strong> Seed</span>
+      </p>
+    </div>
+
+    <div id="Introduction:" class="section">
+      <h2>Introduction:</h2>
+      <p>Cascading Style Sheets (CSS) have been the backbone of web styling for years, but as web development projects
+        grow in scale and complexity, the limitations of vanilla CSS become apparent. <span
+          class="realistic-marker-highlight">SCSS, or Sassy CSS,</span> steps in to
+        address these challenges by providing a more feature-rich and maintainable syntax. In this comprehensive
+        exploration, we will unravel the differences between CSS3 and SCSS, delve into their strengths and weaknesses,
+        and understand why SCSS is often the preferred choice in modern web development.</p>
+    </div>
+
+    <div id="1. CSS3: A Glimpse of.." class="section">
+      <h2>CSS3: A Glimpse of Standard Styling</h2>
+      <p>CSS3, the latest iteration of CSS, brings a host of new features and improvements. It empowers developers to
+        create visually appealing and responsive designs. However, as projects expand, managing styles in CSS3 becomes
+        challenging due to the absence of advanced features like variables and nesting.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="comment">/* Basic CSS3 Styles */</span><br>
+          <span>body &lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-family</span>: <span
+          class="display">"Helvetica Neue"</span><span>, Helvetica, Arial, sans-serif;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="initializer">#f0f0f0</span>;<br>
+          <span>&rcub;</span><br><br>
+          <span class="comment">/* Media Query in CSS3 */</span><br>
+          <span class="keyword">@media </span>screen <span class="keyword">and </span>(<span
+          class="display">min-width</span>: <span class="initializer">768px</span>)<span>&lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span>body &lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span
+          class="initializer">16px</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
+          <span>&rcub;</span><br>
+        </div>
+      </div>
+    </div>
+
+    <div id="2. SCSS: Elevating the.." class="section">
+      <h2>SCSS: Elevating the Stylesheet Game</h2>
+      <p>SCSS, a preprocessor scripting language, extends CSS3 by introducing features like variables, nesting, and
+        mixins. These additions bring a level of organization and reusability that greatly enhances the maintainability
+        of styles in larger projects.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            SCSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="comment">/* Basic SCSS Styles */</span><br>
+          <span class="initializer">$body-font</span>: <span class="display">"Helvetica Neue"</span>, sans-serif;<br>
+          <span class="initializer">$body-bg</span>: <span class="initializer">#f0f0f0</span>;<br><br>
+          <span>body &lcub;</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-family</span>: <span class="initializer">$body-font</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span
+          class="initializer">$body-bg</span>;<br><br>
+          &nbsp;&nbsp;&nbsp;<span class="comment">/* Nesting in SCSS */</span><br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">@media </span>screen <span class="keyword">and </span>(<span
+          class="display">min-width</span>: <span class="initializer">768px</span>)&lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span
+          class="initializer">16px</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
+          <span>&rcub;</span><br>
+        </div>
+      </div>
+    </div>
+
+    <div id="3. Advantages of SCSS.." class="section">
+      <h2>Advantages of SCSS over CSS3:</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ Variables:" class="section">
+      <h3>1. Variables:</h3>
+      <p>SCSS introduces variables, allowing developers to define and reuse values throughout the stylesheet. This
+        promotes consistency and simplifies maintenance.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Nesting:" class="section">
+      <h3>2. Nesting:</h3>
+      <p>With SCSS, selectors can be nested, mirroring the HTML structure. This leads to cleaner and more readable code,
+        reducing redundancy.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Mixins:" class="section">
+      <h3>3. Mixins:</h3>
+      <p>SCSS supports mixins, enabling the reuse of groups of CSS declarations. This promotes modularity and avoids
+        code duplication.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Partials and Import:" class="section">
+      <h3>4. Partials and Import:</h3>
+      <p>SCSS facilitates the organization of styles into separate files, known as partials. These files can be imported
+        where needed, promoting a modular and scalable approach to styling.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Math Operations:" class="section">
+      <h3>5. Math Operations:</h3>
+      <p>SCSS allows for basic math operations within styles, making it easier to handle numeric values dynamically.</p>
+    </div>
+
+    <div id="4. Disadvantages of SCSS:" class="section">
+      <h2>Disadvantages of SCSS:</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ Learning Curve:" class="section">
+      <h3>1. Learning Curve:</h3>
+      <p>Developers accustomed to standard CSS might face a learning curve when transitioning to SCSS and its advanced
+        features.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Compilation Step:" class="section">
+      <h3>2. Compilation Step:</h3>
+      <p>SCSS needs to be compiled into standard CSS before rendering in browsers. While build tools automate this
+        process, it introduces an additional step in the development workflow.</p>
+    </div>
+
+    <div id="5. SCSS in Action: Real.." class="section">
+      <h2>SCSS in Action: Real-World Impact</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ Google Maps:" class="section">
+      <h3>Google Maps:</h3>
+      <ul>
+        <li><strong>Real-time Traffic Optimization:</strong> Google Maps utilizes SCSS to manage and optimize real-time
+          traffic data, providing users with efficient and accurate route suggestions.
+        </li>
+        <li><strong>Location-based Recommendations:</strong> The use of SCSS enables the styling of location-based
+          recommendations, enhancing the user experience.
+        </li>
+      </ul>
+    </div>
+
+    <div id="‎ ‎ ➥ SpaceX Starlink:" class="section">
+      <h3>SpaceX Starlink:</h3>
+      <ul>
+        <li><strong>Precise Satellite Positioning:</strong> SCSS aids SpaceX in styling and positioning satellites with
+          precision, ensuring seamless global internet coverage.
+        </li>
+        <li><strong>Global Internet Connectivity:</strong> The modularity and organization offered by SCSS contribute to
+          the styling of SpaceX's Starlink, a service that connects remote areas globally.
+        </li>
+      </ul>
+    </div>
+
+    <div id="Conclusion:" class="section">
+      <h2>Conclusion: SCSS, the Navigator in Modern Styling</h2>
+      <p>While CSS3 remains the foundation of web styling, SCSS emerges as a powerful ally in the quest for clean,
+        scalable, and maintainable stylesheets. The advantages of SCSS, including variables, nesting, mixins, and
+        modularity, make it an essential tool for modern web development. As projects evolve in complexity, embracing
+        SCSS becomes not just a choice but a practical necessity. The transition from CSS3 to SCSS is an investment that
+        pays off in terms of improved code quality, developer efficiency, and the ability to navigate the ever-expanding
+        seas of modern web development.</p>
+    </div>
+  </div>
+
+  <app-support></app-support>
+
+</div>

@@ -29,6 +29,9 @@ import { WhyJsContComponent } from './components/js/why-js/why-js-cont/why-js-co
 import { SupportComponent } from './shared/components/support/support.component';
 import { CssVarComponent } from './components/css/css-var/css-var.component';
 import { CssVarContComponent } from './components/css/css-var/css-var-cont/css-var-cont.component';
+import { SoftwareComponent } from './components/software/software.component';
+import { QgisComponent } from './components/software/qgis/qgis.component';
+import { QgisContComponent } from './components/software/qgis/qgis-cont/qgis-cont.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { CssVarContComponent } from './components/css/css-var/css-var-cont/css-v
     WhyJsContComponent,
     SupportComponent,
     CssVarComponent,
-    CssVarContComponent
+    CssVarContComponent,
+    SoftwareComponent,
+    QgisComponent,
+    QgisContComponent
   ],
   imports: [
     BrowserModule,

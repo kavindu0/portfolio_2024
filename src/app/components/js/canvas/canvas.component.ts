@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ScrollService} from "../../../services/scroll.service";
+import {filter} from "rxjs";
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-canvas',
@@ -24,13 +26,21 @@ export class CanvasComponent implements OnInit {
   ];
   activeSection: string | any;
 
-  constructor(private scrollService: ScrollService) {
+  constructor(private scrollService: ScrollService, private router: Router) {
   }
 
   ngOnInit(): void {
     this.scrollService.section$.subscribe(section => {
       this.activeSection = section;
     });
+
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        // Reload the page when the route changes
+        window.location.reload();
+        window.scrollTo(0, 0);
+      });
   }
 
   onNavClick(section: string) {

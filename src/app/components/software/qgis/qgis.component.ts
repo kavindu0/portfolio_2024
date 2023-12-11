@@ -9,15 +9,11 @@ import {ScrollService} from "../../../services/scroll.service";
 export class QgisComponent {
 
   sections = [
-    'CSS Variables: Empowering..',
+    'Unraveling QGIS Analysis:',
     'Introduction:',
-    '1. Defining CSS Variables',
-    '2. Using CSS Variables..',
-    '3. Advantages of CSS..',
-    '‎ ‎ ➥ Dynamic Theming',
-    '‎ ‎ ➥ Easy Maintenance',
-    '‎ ‎ ➥ Conditional Styling',
-    '‎ ‎ ➥ Simplified Theming..',
+    '1. Understanding QGIS Basics',
+    '2. Essential QGIS Analysis..',
+    '3. Advanced Techniques',
     'Conclusion:',
   ];
   activeSection: string | any;

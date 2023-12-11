@@ -61,24 +61,14 @@
             <div class="circle"></div>
           </div>
           <div class="language">
-            SCSS
+            CSS
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="comment">/* Basic SCSS Styles */</span><br>
-          <span class="initializer">$body-font</span>: <span class="display">"Helvetica Neue"</span>, sans-serif;<br>
-          <span class="initializer">$body-bg</span>: <span class="initializer">#f0f0f0</span>;<br><br>
-          <span>body &lcub;</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="display">font-family</span>: <span class="initializer">$body-font</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span
-          class="initializer">$body-bg</span>;<br><br>
-          &nbsp;&nbsp;&nbsp;<span class="comment">/* Nesting in SCSS */</span><br>
-          &nbsp;&nbsp;&nbsp;<span class="keyword">@media </span>screen <span class="keyword">and </span>(<span
-          class="display">min-width</span>: <span class="initializer">768px</span>)&lcub;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span
-          class="initializer">16px</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
-          <span>&rcub;</span><br>
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--primary-color);<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="import">var</span>(--font-size);<br>
+          &rcub;<br>
         </div>
       </div>
     </div>

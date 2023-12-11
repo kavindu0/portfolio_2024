@@ -37,6 +37,9 @@ import {WhyJsComponent} from "./components/js/why-js/why-js.component";
 import {WhyJsContComponent} from "./components/js/why-js/why-js-cont/why-js-cont.component";
 import {CssVarComponent} from "./components/css/css-var/css-var.component";
 import {CssVarContComponent} from "./components/css/css-var/css-var-cont/css-var-cont.component";
+import {SoftwareComponent} from "./components/software/software.component";
+import {QgisComponent} from "./components/software/qgis/qgis.component";
+import {QgisContComponent} from "./components/software/qgis/qgis-cont/qgis-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -80,6 +83,12 @@ const routes: Routes = [
           {path: '', component: CssVarContComponent}
       ]}
   ]},
+  { path: 'software', component:SoftwareComponent, children:[
+      {path: '', redirectTo: '/qgis', pathMatch: 'full'},
+      {path: 'qgis', component: QgisComponent, children:[
+          {path: '', component: QgisContComponent}
+      ]}
+  ]}
 ];
 
 @NgModule({

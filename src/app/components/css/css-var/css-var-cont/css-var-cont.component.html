@@ -147,7 +147,35 @@
       <h3>3. Conditional Styling</h3>
       <p>CSS variables open the door to conditional styling without requiring complex CSS preprocessors or frameworks.
         You can create styles that adapt based on user preferences, states, or other conditions.</p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--text-color</span>: <span class="initializer">#333</span>;<br>
+          &rcub;<br><br>
+
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--text-color);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.error-message </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--text-color);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.dark-mode </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--text-color</span>: <span class="initializer">#fff</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
       <p>Activating the <span class="circle-sketch-highlight">.dark-mode</span> class instantly adjusts the text color
         across the application.</p>
     </div>

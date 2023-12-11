@@ -9,22 +9,15 @@ import {ScrollService} from "../../../services/scroll.service";
 export class CssVarComponent implements OnInit{
 
   sections = [
-    'CSS3 vs. SCSS: Navigating..',
+    'CSS Variables: Empowering..',
     'Introduction:',
-    '1. CSS3: A Glimpse of..',
-    '2. SCSS: Elevating the..',
-    '3. Advantages of SCSS..',
-    '‎ ‎ ➥ Variables:',
-    '‎ ‎ ➥ Nesting:',
-    '‎ ‎ ➥ Mixins:',
-    '‎ ‎ ➥ Partials and Import:',
-    '‎ ‎ ➥ Math Operations:',
-    '4. Disadvantages of SCSS:',
-    '‎ ‎ ➥ Learning Curve:',
-    '‎ ‎ ➥ Compilation Step:',
-    '5. SCSS in Action: Real..',
-    '‎ ‎ ➥ Google Maps:',
-    '‎ ‎ ➥ SpaceX Starlink:',
+    '1. Defining CSS Variables',
+    '2. Using CSS Variables..',
+    '3. Advantages of CSS..',
+    '‎ ‎ ➥ Dynamic Theming',
+    '‎ ‎ ➥ Easy Maintenance',
+    '‎ ‎ ➥ Conditional Styling',
+    '‎ ‎ ➥ Simplified Theming..',
     'Conclusion:',
   ];
   activeSection: string | any;

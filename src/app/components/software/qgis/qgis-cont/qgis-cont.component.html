@@ -82,7 +82,25 @@
       <h3>3. Python Scripting</h3>
       <p>QGIS supports Python scripting for automation and advanced analysis. The <strong>Python Console</strong> allows
         you to run scripts within QGIS.</p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Python
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="comment"># Example: Automating repetitive tasks using Python scripts.</span><br>
+          layer = iface.activeLayer()<br>
+          features = layer.getFeatures()<br>
+          <span class="keyword">for</span> feature <span class="keyword">in</span> features:<br>
+          &nbsp;&nbsp;&nbsp;<span class="import">print</span>(feature.attributes())<br>
+        </div>
+      </div>
     </div>
 
     <div id="Conclusion:" class="section">

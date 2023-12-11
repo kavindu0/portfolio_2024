@@ -81,7 +81,31 @@
       <h3>1. Dynamic Theming</h3>
       <p>CSS variables shine in dynamic theming scenarios. By changing variable values dynamically, you can instantly
         alter the entire color scheme or other stylistic elements across your application.</p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--primary-color</span>: <span class="initializer">#3498db</span>;<br>
+          &rcub;<br><br>
+
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--primary-color);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.dark-theme </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--primary-color</span>: <span class="initializer">#2ecc71</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
       <p>By applying the <span class="circle-sketch-highlight">.dark-theme</span> class to an element, the primary color
         shifts across the entire application.</p>
     </div>

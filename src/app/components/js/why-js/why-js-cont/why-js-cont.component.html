@@ -41,9 +41,11 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">import </span><span class="name">React </span>, &lcub;useState&rcub; <span class="keyword">from</span> <span class="dispaly">"react"</span>;<br><br>
+          <span class="keyword">import </span><span class="name">React </span>, &lcub;useState&rcub; <span
+          class="keyword">from</span> <span class="dispaly">"react"</span>;<br><br>
           <span class="keyword">const </span><span class="name">Counter </span>= () => &lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="keyword">const </span><span class="variable">[count, setCount] = </span><span class="name">useState</span> (<span class="initializer">0</span>);<br><br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">const </span><span class="variable">[count, setCount] = </span><span
+          class="name">useState</span> (<span class="initializer">0</span>);<br><br>
           &nbsp;&nbsp;&nbsp;<span class="keyword">return </span>(<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;div&gt;</span><br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;p>Count: &lcub;count&rcub;&lt;/p></span><br>
@@ -74,15 +76,20 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">const </span>http = <span class="import">require</span>(<span class="display">'http'</span>);<br><br>
-          <span class="keyword">const </span>server = http.<span class="name">createServer</span>((req, res) =&gt; &lcub;<br>
-          &nbsp;&nbsp;&nbsp;res.<span class="name">writeHead</span>(<span class="initializer">200</span>, &lcub;<span class="display">'Content-Type'</span>:<span class="display">'text/plain'</span>&rcub;);<br>
+          <span class="keyword">const </span>http = <span class="import">require</span>(<span
+          class="display">'http'</span>);<br><br>
+          <span class="keyword">const </span>server = http.<span class="name">createServer</span>((req, res) =&gt;
+          &lcub;<br>
+          &nbsp;&nbsp;&nbsp;res.<span class="name">writeHead</span>(<span class="initializer">200</span>, &lcub;<span
+          class="display">'Content-Type'</span>:<span class="display">'text/plain'</span>&rcub;);<br>
           &nbsp;&nbsp;&nbsp;res.<span class="name">end</span>(<span class="display">'Hello World!\n'</span>);<br>
           <span>&rcub;);</span><br><br>
 
-          <span class="keyword">const </span><span class="initializer">PORT </span>= <span class="Initializer">3000</span>;<br>
+          <span class="keyword">const </span><span class="initializer">PORT </span>= <span
+          class="Initializer">3000</span>;<br>
           server.<span class="name">listen</span>(<span class="initializer">PORT</span>, () =&gt; &lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span class="name">log</span>(<span class="display">`Server running at http://localhost:$&lcub;PORT}/`</span>);<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span class="name">log</span>(<span
+          class="display">`Server running at http://localhost:$&lcub;PORT}/`</span>);<br>
         </div>
       </div>
       <div class="code-snippet">
@@ -91,7 +98,8 @@
         </div>
         <div class="code-snippet-wrapper">
           <div class="d-flex align-items-center">
-            <div><span> > </span><span>Server running at http://localhost:<span class="keyword">3000</span> &nbsp;</span></div>
+            <div><span> > </span><span>Server running at http://localhost:<span
+              class="keyword">3000</span> &nbsp;</span></div>
             <div class="cursor-end-point"></div>
           </div>
         </div>
@@ -120,10 +128,14 @@
           &lt;script <span class="initializer">src</span>=<span class="display">"https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"</span>&gt;&lt;/script&gt;<br>
           &lt;script <span class="initializer">src</span>=<span class="display">"https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"</span>&gt;&lt;/script&gt;<br><br>
           &lt;script&gt;<br>
-          &nbsp;&nbsp;&nbsp;<span class="keyword">async function </span><span class="name">classifyImage</span>()&lcub;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>image = <span class="initializer">document</span>.<span class="name">getElementById</span>(<span class="display">'input-image'</span>);<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>model = <span class="keyword">await</span> mobilenet.<span class="name">load</span>();<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>predictions = <span class="keyword">await</span> model.<span class="name">classify</span>(image);<br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">async function </span><span
+          class="name">classifyImage</span>()&lcub;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>image = <span class="initializer">document</span>.<span
+          class="name">getElementById</span>(<span class="display">'input-image'</span>);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>model = <span
+          class="keyword">await</span> mobilenet.<span class="name">load</span>();<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const </span>predictions = <span class="keyword">await</span>
+          model.<span class="name">classify</span>(image);<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">console</span>.<span class="name">log</span>(predictions);<br>
           &nbsp;&nbsp;&nbsp;<span>&rcub;</span><br>
           &lt;/script&gt;<br>
@@ -148,7 +160,8 @@
         <div class="code-snippet-wrapper">
           <span class="keyword">const </span>brain = <span class="import">require</span>(<span class="display">'brain.js'</span>);<br><br>
           <span class="keyword">const </span>net = <span class="keyword">new</span> brain.<span class="name">NeuralNetwork</span>();<br>
-          net.<span class="name">train</span>([&lcub; <span class="initializer">input</span>: <span class="display">'I feel great'</span>, <span class="initializer">output</span>: <span class="display">'positive'</span>&rcub;]);<br><br>
+          net.<span class="name">train</span>([&lcub; <span class="initializer">input</span>: <span class="display">'I feel great'</span>,
+          <span class="initializer">output</span>: <span class="display">'positive'</span>&rcub;]);<br><br>
 
           <span class="keyword">const </span>output = net.<span class="name">run</span>(<span class="display">'I feel great'</span>);<br>
           <span class="initializer">console</span>.<span class="name">log</span>(output); <span class="comment">// Output: &lcub; positive: 0.9999982118606567 &rcub;</span><br>
@@ -185,7 +198,8 @@
           &nbsp;&nbsp;&nbsp;&rcub;<br>
           &rcub;;<br><br>
 
-          <span class="keyword">const </span>game = <span class="keyword">new</span> <span class="name">Phaser</span>.<span class="name">Game</span>(config);<br><br>
+          <span class="keyword">const </span>game = <span class="keyword">new</span> <span
+          class="name">Phaser</span>.<span class="name">Game</span>(config);<br><br>
 
           <span class="keyword">function </span><span class="name">preload</span>() &lcub;<br>
           &nbsp;&nbsp;&nbsp;<span class="comment">// Load game assets</span><br>
@@ -220,9 +234,11 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="keyword">const </span>math = <span class="import">require</span>(<span class="display">'mathjs'</span>);<br><br>
+          <span class="keyword">const </span>math = <span class="import">require</span>(<span
+          class="display">'mathjs'</span>);<br><br>
           <span class="keyword">const </span>equation = math.<span class="name">parse</span>(<span class="display">'x^2 - 4'</span>);<br>
-          <span class="keyword">const </span>solution = math.<span class="name">solve</span>(equation, <span class="display">'x'</span>);<br>
+          <span class="keyword">const </span>solution = math.<span class="name">solve</span>(equation, <span
+          class="display">'x'</span>);<br>
           <span class="initializer">console</span>.<span class="name">log</span>(solution); <span class="comment">// Output: [ 2, -2 ]</span><br>
         </div>
       </div>
@@ -248,35 +264,42 @@
           &lt;script&gt;<br>
           <span class="keyword">let </span>particles = [];<br><br>
           <span class="keyword">function </span><span class="name">setup</span>() &lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="name">createCanvas</span>(<span class="initializer">600</span>, <span class="initializer">400</span>)<br>
+          &nbsp;&nbsp;&nbsp;<span class="name">createCanvas</span>(<span class="initializer">600</span>, <span
+          class="initializer">400</span>)<br>
           &rcub;;<br><br>
 
           <span class="keyword">function </span><span class="name">draw</span>() &lcub;<br>
           &nbsp;&nbsp;&nbsp;<span class="name">background</span>(<span class="initializer">255</span>)<br><br>
-          &nbsp;&nbsp;&nbsp;<span class="keyword">for </span>(<span class="keyword">let </span>particle <span class="keyword">of </span>particles) &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="keyword">for </span>(<span class="keyword">let </span>particle <span
+          class="keyword">of </span>particles) &lcub;<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;particle.<span class="name">update</span>()<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;particle.<span class="name">display</span>()<br>
           &nbsp;&nbsp;&nbsp;&rcub;<br>
           &rcub;;<br><br>
 
           <span class="keyword">function </span><span class="name">mousePressed</span>() &lcub;<br>
-          &nbsp;&nbsp;&nbsp;particles.<span class="name">push</span>(<span class="keyword">new </span><span class="name">Particle</span>(mouseX, mouseY));<br>
+          &nbsp;&nbsp;&nbsp;particles.<span class="name">push</span>(<span class="keyword">new </span><span
+          class="name">Particle</span>(mouseX, mouseY));<br>
           &rcub;;<br><br>
 
           <span class="keyword">class </span><span class="name">Particle</span> &lcub;<br>
           &nbsp;&nbsp;&nbsp;<span class="keyword">constructor</span>(x, y) &lcub;<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.x = x;<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.y = y;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.size = <span class="initializer">10</span>;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.speed = <span class="initializer">1</span>;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.size = <span
+          class="initializer">10</span>;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.speed = <span
+          class="initializer">1</span>;<br>
           &nbsp;&nbsp;&nbsp;&rcub;<br><br>
 
           &nbsp;&nbsp;&nbsp;<span class="keyword">function </span><span class="name">update</span>() &lcub;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.x += <span class="initializer">this</span>.speed;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="initializer">this</span>.x += <span
+          class="initializer">this</span>.speed;<br>
           &nbsp;&nbsp;&nbsp;&rcub;<br><br>
 
           &nbsp;&nbsp;&nbsp;<span class="keyword">function </span><span class="name">display</span>() &lcub;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name">ellipse</span>(<span class="initializer">this</span>.x, <span class="initializer">this</span>.y, <span class="initializer">this</span>.size);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="name">ellipse</span>(<span class="initializer">this</span>.x,
+          <span class="initializer">this</span>.y, <span class="initializer">this</span>.size);<br>
           &nbsp;&nbsp;&nbsp;&rcub;<br>
           &rcub;;<br>
           &lt;/script&gt;
@@ -295,7 +318,99 @@
         to tackle the challenges of the digital era.</p>
     </div>
 
-    <app-support></app-support>
+  </div>
+  <app-support></app-support>
+
+  <div class="navigation-content">
+    <div class="section">
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div style="min-width: 50%">
+          <h1>Where to next?</h1>
+          <ul>
+            <li><span routerLink="/home">Notes</span></li>
+            <ul>
+              <li class="not-link">
+                <svg preserveAspectRatio="none" viewBox="0 0 24 26" style="width: 24px; height: 100%; flex-shrink: 0;">
+                  <line x1="0" y1="13" x2="24" y2="13" stroke="currentColor" stroke-width="2"
+                        vector-effect="non-scaling-stroke"></line>
+                  <line x1="1" y1="0" x2="1" y2="13" stroke="currentColor" stroke-width="2"
+                        vector-effect="non-scaling-stroke"></line>
+                </svg>
+                <span>Javascript</span></li>
+              <ul>
+                <li class="here">&nbsp;&nbsp;&nbsp;You are here
+                  <svg class="_1ovgwpu0" viewBox="0 0 24 24" width="18px" height="18px"><title>Arrow pointing
+                    down</title>
+                    <path
+                      d="M12,23.36L2.94,15h5.56V1h7V15h5.56l-9.06,8.36Zm-3.94-6.36l3.94,3.64,3.94-3.64h-2.44V3h-3v14h-2.44Z"
+                      vector-effect="non-scaling-stroke"></path>
+                  </svg>
+                </li>
+                <li class="active-link">
+                  <svg preserveAspectRatio="none" viewBox="0 0 24 26"
+                       style="width: 24px; height: 100%; flex-shrink: 0;">
+                    <line x1="0" y1="13" x2="24" y2="13" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                    <line x1="1" y1="0" x2="1" y2="26" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                  </svg>
+                  <span routerLink="/js/why-js">Why Js?</span></li>
+                <li>
+                  <svg preserveAspectRatio="none" viewBox="0 0 24 26"
+                       style="width: 24px; height: 100%; flex-shrink: 0;">
+                    <line x1="0" y1="13" x2="24" y2="13" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                    <line x1="1" y1="0" x2="1" y2="26" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                  </svg>
+                  <span routerLink="/js/v8engine">V8 Engine</span></li>
+                <li class="not-link">
+                  <svg preserveAspectRatio="none" viewBox="0 0 24 26" style="width: 24px; height: 100%; flex-shrink: 0;">
+                    <line x1="0" y1="13" x2="24" y2="13" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                    <line x1="1" y1="0" x2="1" y2="13" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                  </svg>
+                  <span>Simulations</span></li>
+                <ul>
+                  <li>
+                    <svg preserveAspectRatio="none" viewBox="0 0 24 26"
+                         style="width: 24px; height: 100%; flex-shrink: 0;">
+                      <line x1="0" y1="13" x2="24" y2="13" stroke="currentColor" stroke-width="2"
+                            vector-effect="non-scaling-stroke"></line>
+                      <line x1="1" y1="0" x2="1" y2="26" stroke="currentColor" stroke-width="2"
+                            vector-effect="non-scaling-stroke"></line>
+                    </svg>
+                    <span routerLink="/js/wave">Wave Simulation</span></li>
+                  <li>
+                    <svg preserveAspectRatio="none" viewBox="0 0 24 26"
+                         style="width: 24px; height: 100%; flex-shrink: 0;">
+                      <line x1="0" y1="13" x2="24" y2="13" stroke="currentColor" stroke-width="2"
+                            vector-effect="non-scaling-stroke"></line>
+                      <line x1="1" y1="0" x2="1" y2="13" stroke="currentColor" stroke-width="2"
+                            vector-effect="non-scaling-stroke"></line>
+                    </svg>
+                    <span routerLink="/js/fluid">Fluid Simulation</span></li>
+                </ul>
+                <li>
+                  <svg preserveAspectRatio="none" viewBox="0 0 24 26"
+                       style="width: 24px; height: 100%; flex-shrink: 0;">
+                    <line x1="0" y1="13" x2="24" y2="13" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                    <line x1="1" y1="0" x2="1" y2="13" stroke="currentColor" stroke-width="2"
+                          vector-effect="non-scaling-stroke"></line>
+                  </svg>
+                  <span routerLink="/js/canvas">Canvas</span></li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+        <div class="where-to-next-banner">
+          <img src="../../../../../assets/images/navigate2.png" alt="banner">
+          <img src="../../../../../assets/images/navigate1.png" alt="navigate" class="banner-image-supporter">
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

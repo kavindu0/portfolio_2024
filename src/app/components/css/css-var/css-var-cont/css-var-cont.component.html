@@ -114,7 +114,31 @@
       <h3>2. Easy Maintenance</h3>
       <p>CSS variables promote easy maintenance by centralizing key values. If you need to modify a common property like
         font size, you can do so at the root level, instantly updating it everywhere it's used.</p>
-      <!--      -->
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--font-size</span>: <span class="initializer">16px</span>;<br>
+          &rcub;<br><br>
+
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="import">var</span>(--font-size);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.header </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--font-size</span>: <span class="import">calc</span>(<span class="import">var</span>(--font-size) + <span class="initializer">4px</span>);<br>
+          &rcub;<br>
+        </div>
+      </div>
       <p>Adjusting the <span class="circle-sketch-highlight">--font-size</span> variable automatically cascades changes
         to all elements using it.</p>
     </div>

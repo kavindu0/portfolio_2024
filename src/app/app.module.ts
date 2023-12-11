@@ -27,6 +27,8 @@ import { FluidSimulationContComponent } from './components/js/fluid-simulation/f
 import { WhyJsComponent } from './components/js/why-js/why-js.component';
 import { WhyJsContComponent } from './components/js/why-js/why-js-cont/why-js-cont.component';
 import { SupportComponent } from './shared/components/support/support.component';
+import { CssVarComponent } from './components/css/css-var/css-var.component';
+import { CssVarContComponent } from './components/css/css-var/css-var-cont/css-var-cont.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { SupportComponent } from './shared/components/support/support.component'
     FluidSimulationContComponent,
     WhyJsComponent,
     WhyJsContComponent,
-    SupportComponent
+    SupportComponent,
+    CssVarComponent,
+    CssVarContComponent
   ],
   imports: [
     BrowserModule,

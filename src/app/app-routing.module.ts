@@ -35,6 +35,8 @@ import {
 } from "./components/js/fluid-simulation/fluid-simulation-cont/fluid-simulation-cont.component";
 import {WhyJsComponent} from "./components/js/why-js/why-js.component";
 import {WhyJsContComponent} from "./components/js/why-js/why-js-cont/why-js-cont.component";
+import {CssVarComponent} from "./components/css/css-var/css-var.component";
+import {CssVarContComponent} from "./components/css/css-var/css-var-cont/css-var-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -73,6 +75,9 @@ const routes: Routes = [
       {path: '', redirectTo: '/css-vs-scss', pathMatch: 'full'},
       {path: 'css-vs-scss', component: CssVsScssComponent, children:[
           {path: '', component: CssVsScssContComponent}
+      ]},
+      {path: 'var', component: CssVarComponent, children:[
+          {path: '', component: CssVarContComponent}
       ]}
   ]},
 ];

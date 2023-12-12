@@ -154,6 +154,29 @@
           width: 100%;
         }
       }
+      .about-contact{
+        font-size: 20px;
+
+        a{
+          color: #d6c8ab;
+          text-decoration: none;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background-color,color 0.3s ease;
+
+          &:first-child{
+            color: #cd2c6f;
+          }
+
+          &:hover{
+            color: #1c1c1c;
+            background-color: #b9a06e;
+          }
+        }
+      }
 
       #section2{
         table{
@@ -184,6 +207,9 @@
           display: none;
         }
       }
+    }
+    @media screen and (max-width: 768px) {
+      border-left: none;
     }
   }
 }

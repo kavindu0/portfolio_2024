@@ -32,6 +32,7 @@ import { CssVarContComponent } from './components/css/css-var/css-var-cont/css-v
 import { SoftwareComponent } from './components/software/software.component';
 import { QgisComponent } from './components/software/qgis/qgis.component';
 import { QgisContComponent } from './components/software/qgis/qgis-cont/qgis-cont.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { QgisContComponent } from './components/software/qgis/qgis-cont/qgis-con
     CssVarContComponent,
     SoftwareComponent,
     QgisComponent,
-    QgisContComponent
+    QgisContComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -40,10 +40,12 @@ import {CssVarContComponent} from "./components/css/css-var/css-var-cont/css-var
 import {SoftwareComponent} from "./components/software/software.component";
 import {QgisComponent} from "./components/software/qgis/qgis.component";
 import {QgisContComponent} from "./components/software/qgis/qgis-cont/qgis-cont.component";
+import {AboutComponent} from "./components/about/about.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'js', component: JsComponent, children:[
       {path: '', redirectTo: '/v8engine', pathMatch: 'full'},
       {path: 'v8engine', component: V8engineComponent, children:[

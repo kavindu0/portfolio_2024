@@ -32,6 +32,53 @@
   }
   .about-nav{
     border-right: 2px solid #d6c8ab;
+
+    .nav-wrapper{
+      padding: 8px;
+      height: calc(100vh - (2vw + 61px));
+      background-image: url("../../../assets/images/logo-3.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+
+      h4{
+        font-size: 20px;
+        margin: 15px 0;
+      }
+
+      ul{
+        padding: 0;
+
+        li{
+          list-style: none;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 8px;
+          transition: background-color 0.3s ease;
+          margin: 0;
+
+          a{
+            text-decoration: none;
+            color: #d6c8ab;
+
+            &:active{
+              text-decoration: double underline;
+            }
+          }
+
+          &:hover{
+            cursor: pointer;
+            background-color: #d6c8ab;
+
+            a{
+              color: #1c1c1c;
+            }
+          }
+        }
+      }
+    }
   }
   .about-content{
     border-left: 2px solid #d6c8ab;
@@ -41,7 +88,7 @@
       height: calc(100vh - (2vw + 61px));
       overflow-x: hidden;
       overflow-y: auto;
-      padding: 8px;
+      padding: 18px;
 
       h2{
         font-size: 22px;

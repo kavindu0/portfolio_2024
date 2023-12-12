@@ -1,5 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Base64} from '../../shared/files/base64';
+import {filter} from "rxjs";
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',

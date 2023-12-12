@@ -124,6 +124,13 @@
         img{
           width: 100%;
         }
+        .pro-image{
+          width: 30%;
+
+          @media screen and (max-width: 768px) {
+            width: 50%;
+          }
+        }
       }
 
       .vr-bar{

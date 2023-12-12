@@ -21,8 +21,10 @@ export class AppComponent implements OnInit{
         if (this.router.url === '/about') {
           this.isNavbar = false;
           const mainCanvas = document.querySelector('.main-canvas') as HTMLElement;
+          const outline = document.querySelector('.out-line') as HTMLElement;
           mainCanvas.style.backgroundColor = '#1c1c1c';
           mainCanvas.style.backgroundImage = 'none';
+          outline.style.height = '100%';
         }
         else {
           if (!localStorage.getItem('foo')) {

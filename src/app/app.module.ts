@@ -33,6 +33,8 @@ import { SoftwareComponent } from './components/software/software.component';
 import { QgisComponent } from './components/software/qgis/qgis.component';
 import { QgisContComponent } from './components/software/qgis/qgis-cont/qgis-cont.component';
 import { AboutComponent } from './components/about/about.component';
+import { JaspComponent } from './components/software/jasp/jasp.component';
+import { JaspContComponent } from './components/software/jasp/jasp-cont/jasp-cont.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { AboutComponent } from './components/about/about.component';
     SoftwareComponent,
     QgisComponent,
     QgisContComponent,
-    AboutComponent
+    AboutComponent,
+    JaspComponent,
+    JaspContComponent
   ],
   imports: [
     BrowserModule,

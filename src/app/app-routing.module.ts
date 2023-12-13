@@ -41,6 +41,8 @@ import {SoftwareComponent} from "./components/software/software.component";
 import {QgisComponent} from "./components/software/qgis/qgis.component";
 import {QgisContComponent} from "./components/software/qgis/qgis-cont/qgis-cont.component";
 import {AboutComponent} from "./components/about/about.component";
+import {JaspComponent} from "./components/software/jasp/jasp.component";
+import {JaspContComponent} from "./components/software/jasp/jasp-cont/jasp-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -89,6 +91,9 @@ const routes: Routes = [
       {path: '', redirectTo: '/qgis', pathMatch: 'full'},
       {path: 'qgis', component: QgisComponent, children:[
           {path: '', component: QgisContComponent}
+      ]},
+      {path: 'jasp', component: JaspComponent, children:[
+          {path: '', component: JaspContComponent}
       ]}
   ]}
 ];

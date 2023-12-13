@@ -1,1 +1,119 @@
-<p>jasp-cont works!</p>
+<div class="note-title-wrapper-header">
+  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+  <p><span routerLink="/home">Notes</span> / Software / QGIS</p>
+</div>
+<div class="container">
+  <div class="note-content">
+    <div class="banner">
+      <img src="assets/images/software/qgis-thumb.png" alt="qgis">
+    </div>
+    <div id="Unraveling QGIS Analysis:" class="section">
+      <h1>Unraveling QGIS Analysis: A Comprehensive Guide</h1>
+      <p class="note-tags"><span><strong>Tended:</strong> Dec 2023</span> <span><strong>Status:</strong> Sprout</span>
+      </p>
+    </div>
+
+    <div id="Introduction:" class="section">
+      <h2>Introduction to QGIS Analysis</h2>
+      <p>QGIS, or Quantum Geographic Information System, is an open-source platform that empowers users to analyze and
+        visualize spatial data. Whether you're a GIS professional or a novice, QGIS offers a myriad of tools for spatial
+        analysis that can unravel the hidden patterns and insights within geographical data. In this comprehensive
+        guide, we will explore various aspects of QGIS analysis, from the basic functionalities to advanced techniques.</p>
+    </div>
+
+    <div id="1. Understanding QGIS Basics" class="section">
+      <h2>Understanding QGIS Basics</h2>
+      <h3>1. Installation and Setup</h3>
+      <p>Before diving into analysis, it's essential to set up QGIS. Visit the official <a
+        href="https://www.qgis.org/en/site/forusers/download.html">QGIS website</a> to download and install the latest
+        version. Once installed, open QGIS and familiarize yourself with the interface.</p>
+
+      <h3>2. Data Import</h3>
+      <p>QGIS supports various data formats such as shapefiles, GeoTIFFs, and more. To perform analysis, import your
+        spatial datasets into QGIS. Go to <strong>Layer > Add Layer > Add Vector Layer</strong> for vector data or
+        <strong>Layer > Add Layer > Add Raster Layer</strong> for raster data.</p>
+    </div>
+
+    <div id="2. Essential QGIS Analysis.." class="section">
+      <h2>Essential QGIS Analysis Tools</h2>
+      <h3>1. Spatial Query</h3>
+      <p>Spatial queries help filter data based on their spatial relationships. For example, you can select all points
+        within a specific polygon. To do this, use the <strong>Select by Location</strong> tool under the
+        <strong>Vector</strong> menu.</p>
+
+      <h3>2. Buffer Analysis</h3>
+      <p>Buffer analysis involves creating a zone around a feature. This is useful for understanding the proximity of
+        features. Go to <strong>Vector > Geoprocessing Tools > Buffer</strong> to create a buffer zone around your
+        selected features.</p>
+      <!--      -->
+
+      <h3>3. Overlay Analysis</h3>
+      <p>Overlay analysis combines multiple layers to derive meaningful insights. Operations like Union, Intersect, and
+        Difference fall into this category. Explore the <strong>Processing Toolbox</strong> for various overlay tools.
+      </p>
+      <!--      -->
+
+      <h3>4. Spatial Join</h3>
+      <p>Spatial Join associates the attributes of one layer with another based on their spatial relationship. This is
+        useful for enriching your data. Access this feature through <strong>Vector > Data Management Tools > Join
+          Attributes by Location</strong>.</p>
+      <!--      -->
+
+      <h3>5. Heatmap Creation</h3>
+      <p>Heatmaps visualize the intensity of point data. Use the <strong>Heatmap</strong> plugin to generate heatmaps.
+        Install the plugin from the <strong>Plugins</strong> menu and access it under the <strong>Raster</strong> menu.
+      </p>
+      <!--      -->
+    </div>
+
+    <div id="3. Advanced Techniques" class="section">
+      <h2>Advanced Techniques</h2>
+      <h3>1. Raster Analysis</h3>
+      <p>For raster data, QGIS provides a suite of analysis tools. The <strong>Raster Calculator</strong> allows you to
+        perform complex calculations, while the <strong>Terrain Analysis</strong> tools aid in understanding terrain
+        characteristics.</p>
+      <!--      -->
+
+      <h3>2. Time-Enabled Data</h3>
+      <p>QGIS supports time-enabled data, enabling temporal analysis. If your data includes a time attribute, enable
+        time support in the layer properties.</p>
+      <!--      -->
+
+      <h3>3. Python Scripting</h3>
+      <p>QGIS supports Python scripting for automation and advanced analysis. The <strong>Python Console</strong> allows
+        you to run scripts within QGIS.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Python
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="comment"># Example: Automating repetitive tasks using Python scripts.</span><br>
+          layer = iface.activeLayer()<br>
+          features = layer.getFeatures()<br>
+          <span class="keyword">for</span> feature <span class="keyword">in</span> features:<br>
+          &nbsp;&nbsp;&nbsp;<span class="import">print</span>(feature.attributes())<br>
+        </div>
+      </div>
+    </div>
+
+    <div id="Conclusion:" class="section">
+      <h2>Conclusion</h2>
+      <p>QGIS analysis is a powerful toolset for unraveling the intricacies of spatial data. From basic spatial queries
+        to advanced raster analysis, QGIS provides a comprehensive suite of tools. As you delve into the world of QGIS
+        analysis, remember that practice and experimentation are key. By combining these tools creatively, you can
+        extract valuable insights from geographical data, making informed decisions and contributing to a deeper
+        understanding of the world around us. So, fire up QGIS and embark on your journey of spatial exploration and
+        analysis!</p>
+    </div>
+  </div>
+
+  <app-support></app-support>
+
+</div>

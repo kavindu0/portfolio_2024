@@ -9,11 +9,11 @@ import {ScrollService} from "../../../services/scroll.service";
 export class JaspComponent {
 
   sections = [
-    'Unraveling QGIS Analysis:',
+    'Unveiling JASP:',
     'Introduction:',
-    '1. Understanding QGIS Basics',
-    '2. Essential QGIS Analysis..',
-    '3. Advanced Techniques',
+    '1. Getting Started with JASP',
+    '2. Conducting Analyses in..',
+    '3. Advantages of Using JASP',
     'Conclusion:',
   ];
   activeSection: string | any;

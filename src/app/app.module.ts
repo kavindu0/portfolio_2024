@@ -35,6 +35,8 @@ import { QgisContComponent } from './components/software/qgis/qgis-cont/qgis-con
 import { AboutComponent } from './components/about/about.component';
 import { JaspComponent } from './components/software/jasp/jasp.component';
 import { JaspContComponent } from './components/software/jasp/jasp-cont/jasp-cont.component';
+import { DataAnalysisComponent } from './components/python/data-analysis/data-analysis.component';
+import { DataAnalysisContComponent } from './components/python/data-analysis/data-analysis-cont/data-analysis-cont.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,9 @@ import { JaspContComponent } from './components/software/jasp/jasp-cont/jasp-con
     QgisContComponent,
     AboutComponent,
     JaspComponent,
-    JaspContComponent
+    JaspContComponent,
+    DataAnalysisComponent,
+    DataAnalysisContComponent
   ],
   imports: [
     BrowserModule,

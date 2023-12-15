@@ -26,6 +26,7 @@ export class DataAnalysisComponent {
     '‎ ‎ ➥ Predictive Modeling:',
     '‎ ‎ ➥ Interpret Results:',
     '‎ ‎ ➥ Communicate Insights:',
+    'Example:',
     'Conclusion:',
   ];
   activeSection: string | any;

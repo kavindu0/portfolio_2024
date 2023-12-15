@@ -311,6 +311,28 @@
           plt.show()<br>
         </div>
       </div>
+
+      <p>Step 9: Correlation Matrix</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Python
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="comment"># Correlation matrix</span><br>
+          correlation_matrix = data.corr()<br>
+          plt.figure(figsize=(<span class="initializer">10</span>,<span class="initializer"> 6</span>))<br>
+          sns.heatmap(correlation_matrix, annot=<span class="keyword">True</span>, cmap=<span class="display">'coolwarm'</span> , fmt=<span class="display">".2f"</span>)<br>
+          plt.title(<span class="display">'Correlation Matrix'</span>)<br>
+          plt.show()<br>
+        </div>
+      </div>
     </div>
 
     <div id="Conclusion:" class="section">

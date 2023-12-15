@@ -258,7 +258,8 @@
         <div class="code-snippet-wrapper">
           <span class="comment"># Histogram</span><br>
           plt.figure(figsize=(<span class="initializer">10</span>,<span class="initializer"> 6</span>))<br>
-          sns.histplot(data[<span class="display">'Sales'</span>], bins= <span class="initializer">20</span>, kde= <span class="keyword">True</span>)<br>
+          sns.histplot(data[<span class="display">'Sales'</span>], bins= <span class="initializer">20</span>, kde= <span
+          class="keyword">True</span>)<br>
           plt.title(<span class="display">'Distribution of Sales'</span>)<br>
           plt.xlabel(<span class="display">'Sales'</span>)<br>
           plt.ylabel(<span class="display">'Frequency'</span>)<br>
@@ -281,7 +282,8 @@
         <div class="code-snippet-wrapper">
           <span class="comment"># Scatter plot</span><br>
           plt.figure(figsize=(<span class="initializer">10</span>,<span class="initializer"> 6</span>))<br>
-          sns.scatterplot(x=<span class="display">'Advertising'</span>, y=<span class="display">'Sales'</span>, data=data)<br>
+          sns.scatterplot(x=<span class="display">'Advertising'</span>, y=<span class="display">'Sales'</span>,
+          data=data)<br>
           plt.title(<span class="display">'Scatter Plot of Advertising vs. Sales'</span>)<br>
           plt.xlabel(<span class="display">'Advertising Expenses'</span>)<br>
           plt.ylabel(<span class="display">'Sales'</span>)<br>
@@ -304,7 +306,8 @@
         <div class="code-snippet-wrapper">
           <span class="comment"># Box plot</span><br>
           plt.figure(figsize=(<span class="initializer">10</span>,<span class="initializer"> 6</span>))<br>
-          sns.boxplot(x=<span class="display">'Product_Type'</span>, y=<span class="display">'Sales'</span>, data=data)<br>
+          sns.boxplot(x=<span class="display">'Product_Type'</span>, y=<span class="display">'Sales'</span>,
+          data=data)<br>
           plt.title(<span class="display">'Box Plot of Sales by Product Type'</span>)<br>
           plt.xlabel(<span class="display">'Product Type'</span>)<br>
           plt.ylabel(<span class="display">'Sales'</span>)<br>
@@ -328,11 +331,34 @@
           <span class="comment"># Correlation matrix</span><br>
           correlation_matrix = data.corr()<br>
           plt.figure(figsize=(<span class="initializer">10</span>,<span class="initializer"> 6</span>))<br>
-          sns.heatmap(correlation_matrix, annot=<span class="keyword">True</span>, cmap=<span class="display">'coolwarm'</span> , fmt=<span class="display">".2f"</span>)<br>
+          sns.heatmap(correlation_matrix, annot=<span class="keyword">True</span>, cmap=<span
+          class="display">'coolwarm'</span> , fmt=<span class="display">".2f"</span>)<br>
           plt.title(<span class="display">'Correlation Matrix'</span>)<br>
           plt.show()<br>
         </div>
       </div>
+
+      <h3>Interpreting Results:</h3>
+      <ul>
+        <li><strong>Histogram: </strong>Analyzing the histogram gives us insights into the distribution of sales. In our
+          example, it appears that most sales fall within a certain range.
+        </li>
+        <li><strong>Scatter Plot: </strong>The scatter plot of advertising expenses vs. sales helps us understand the
+          relationship between these two variables. We can see if there's any correlation between increased advertising
+          and higher sales.
+        </li>
+        <li><strong>Box Plot: </strong>The box plot by product type allows us to compare the sales distribution for
+          different product types. We can identify outliers and variations in sales across product categories.
+        </li>
+        <li><strong>Correlation Matrix: </strong>This matrix provides a numerical representation of the relationships
+          between different variables. A correlation close to 1 indicates a strong positive relationship, while close to
+          -1 indicates a strong negative relationship.
+        </li>
+      </ul>
+      <p>Through this exploratory data analysis, we've gained valuable insights into the distribution of sales,
+        relationships between variables, and variations across product types. These visualizations serve as a foundation
+        for making informed decisions in various domains, such as marketing strategies, product management, or resource
+        allocation.</p>
     </div>
 
     <div id="Conclusion:" class="section">

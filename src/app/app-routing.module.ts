@@ -43,6 +43,10 @@ import {QgisContComponent} from "./components/software/qgis/qgis-cont/qgis-cont.
 import {AboutComponent} from "./components/about/about.component";
 import {JaspComponent} from "./components/software/jasp/jasp.component";
 import {JaspContComponent} from "./components/software/jasp/jasp-cont/jasp-cont.component";
+import {DataAnalysisComponent} from "./components/python/data-analysis/data-analysis.component";
+import {
+  DataAnalysisContComponent
+} from "./components/python/data-analysis/data-analysis-cont/data-analysis-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -76,6 +80,9 @@ const routes: Routes = [
           {path: 'supervised-learning', component: SupervisedLearningComponent},
           {path: 'unsupervised-learning', component: UnsupervisedLearningComponent},
           {path: 'reinforcement-learning', component: ReinforcementLearningComponent}
+      ]},
+      {path: 'data-analysis', component: DataAnalysisComponent, children:[
+          {path: '', component: DataAnalysisContComponent}
       ]}
   ]},
   { path: 'css', component: CssComponent, children:[

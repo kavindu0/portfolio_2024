@@ -242,6 +242,29 @@
           data = data.drop_duplicates()<br>
         </div>
       </div>
+
+      <p>Step 6: Data Visualization</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Python
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="comment"># Histogram</span><br>
+          plt.figure(figsize=(<span class="initializer">10</span>,<span class="initializer"> 6</span>))<br>
+          sns.histplot(data[<span class="display">'Sales'</span>], bins= <span class="initializer">20</span>, kde= <span class="keyword">True</span>)<br>
+          plt.title(<span class="display">'Distribution of Sales'</span>)<br>
+          plt.xlabel(<span class="display">'Sales'</span>)<br>
+          plt.ylabel(<span class="display">'Frequency'</span>)<br>
+          plt.show()<br>
+        </div>
+      </div>
     </div>
 
     <div id="Conclusion:" class="section">

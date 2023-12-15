@@ -222,6 +222,26 @@
           <span class="import">print</span>(data.describe())<br>
         </div>
       </div>
+
+      <p>Step 5: Data Cleaning</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            Python
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="comment"># Drop rows with missing values</span><br>
+          data = data.dropna()<br><br>
+          <span class="comment"># Drop duplicate rows</span><br>
+          data = data.drop_duplicates()<br>
+        </div>
+      </div>
     </div>
 
     <div id="Conclusion:" class="section">

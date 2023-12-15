@@ -11,16 +11,21 @@ import {filter} from "rxjs";
 export class DataAnalysisComponent {
 
   sections = [
-    'Unveiling the Power of..',
+    'A Comprehensive Guide..',
     'Introduction:',
-    '1. Understanding Geographic..',
-    '2. The Role of Geographic..',
-    '3. Python for Advanced Geographic..',
-    '‎ ‎ ➥ Handling Complex..',
-    '‎ ‎ ➥ Advanced Visualization..',
-    '4. Impact on Daily Life:..',
-    '‎ ‎ ➥ Google Maps:',
-    '‎ ‎ ➥ SpaceX Starlink:',
+    '1. Why Data Analysis?',
+    '2. Technologies in Data..',
+    '3. Step-by-Step Guide to..',
+    '‎ ‎ ➥ Define Objectives..',
+    '‎ ‎ ➥ Data Collection:',
+    '‎ ‎ ➥ Data Cleaning:',
+    '‎ ‎ ➥ Exploratory Data..',
+    '‎ ‎ ➥ Feature Engineering:',
+    '‎ ‎ ➥ Data Visualization:',
+    '‎ ‎ ➥ Statistical Analysis:',
+    '‎ ‎ ➥ Predictive Modeling:',
+    '‎ ‎ ➥ Interpret Results:',
+    '‎ ‎ ➥ Communicate Insights:',
     'Conclusion:',
   ];
   activeSection: string | any;

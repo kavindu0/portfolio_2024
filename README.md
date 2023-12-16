@@ -1,27 +1,40 @@
-# Client
+# Kavi Castelo's Personal Digital Garden
+The purpose of this garden is to be a blueprint for enhance knowledge of software development, web
+development and every each conar of technology. Notes analysing design, engineering and creativity. It
+aims to be simple and direct.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+## Features:
+- This application is a knowledge source and written by single author.
+- In very first release discussed Javascript, Python, Css and few of software development tools.
+- This application built by using vintage theme and users can use the site like real old vintage book.
+- Also, this site has very user-friendly and simple interfaces. it helps to use the site anyone without get boring.
+- Specially, examples and explanations are wrote in handwritten, and it's very helpful for users to get understand.
 
-## Development server
+## Technologies Used:
+- Mainly, this application used Angular Framework for development. Used different components for each notes.
+- Used vintage color theme for increase user experience and user attractive.
+- Used font awesome and icons8 icons as website's icons.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation:
+- Copy the repository
+```markdown
+git clone https://github.com/kavicastelo/portfolio_2024.git
+```
+- Navigate to the `Client` directory.
+```markdown
+cd Client
+```
+- Install `npm` Packages
+```markdown
+npm install
+```
+- Run the project in dev server
+```markdown
+ng serve
+```
 
-## Code scaffolding
+## Contributing:
+Designed and Developed by [Kavi Castelo](https://github.com/kavicastelo)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License:
+This project is Licensed under [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License](LICENSE.MD) License.

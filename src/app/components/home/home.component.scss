@@ -175,7 +175,7 @@
 }
 
 .sec-3{
-  padding: 20px 0;
+  padding: 30px 0 20px 0;
   border-top: 1px solid #1c1c1c;
 
   .item{
@@ -191,6 +191,7 @@
         list-style: url("https://img.icons8.com/small/16/pen.png");
         margin-bottom: 8px;
         cursor: pointer;
+        padding-left: 5px;
 
         &:hover{
           color: #d6c8ab;

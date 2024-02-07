@@ -13,7 +13,207 @@
       </p>
     </div>
 
-    
+    <div id="Introduction:" class="section">
+      <p>Cascading Style Sheets (CSS) <span class="realistic-marker-highlight">Flexbox</span> is a powerful layout model
+        that allows you to design complex and
+        responsive web layouts with ease. In this guide, we'll dive deep into the world of Flexbox, exploring its
+        concepts, properties, and providing practical examples.</p>
+    </div>
+
+    <div id="Understanding Flexbox" class="section">
+      <h2>Understanding Flexbox</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ What is Flexbox?" class="section">
+      <h3>What is Flexbox?</h3>
+      <p>
+        Flexbox, or the Flexible Box Layout, is a layout model in CSS that allows the design of complex layouts and
+        structures with a more efficient and predictable way than traditional models. It's particularly well-suited for
+        designing dynamic and responsive user interfaces.
+      </p>
+    </div>
+
+    <div id="2. Using CSS Variables.." class="section">
+      <h2>Using CSS Variables in Styles</h2>
+      <p>Once defined, CSS variables can be utilized throughout the stylesheet, enabling dynamic and centralized control
+        over style properties. To use a variable, use the <span class="realistic-marker-highlight">var()</span>
+        function:</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--primary-color);<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="import">var</span>(--font-size);<br>
+          &rcub;<br>
+        </div>
+      </div>
+    </div>
+
+    <div id="3. Advantages of CSS.." class="section">
+      <h2>Advantages of CSS Variables</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ Dynamic Theming" class="section">
+      <h3>What is Flexbox?</h3>
+      <p>CSS variables shine in dynamic theming scenarios. By changing variable values dynamically, you can instantly
+        alter the entire color scheme or other stylistic elements across your application.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--primary-color</span>: <span
+          class="initializer">#3498db</span>;<br>
+          &rcub;<br><br>
+
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--primary-color);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.dark-theme </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--primary-color</span>: <span
+          class="initializer">#2ecc71</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>By applying the <span class="circle-sketch-highlight">.dark-theme</span> class to an element, the primary color
+        shifts across the entire application.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Easy Maintenance" class="section">
+      <h3>2. Easy Maintenance</h3>
+      <p>CSS variables promote easy maintenance by centralizing key values. If you need to modify a common property like
+        font size, you can do so at the root level, instantly updating it everywhere it's used.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--font-size</span>: <span class="initializer">16px</span>;<br>
+          &rcub;<br><br>
+
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="import">var</span>(--font-size);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.header </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--font-size</span>: <span class="import">calc</span>(<span
+          class="import">var</span>(--font-size) + <span class="initializer">4px</span>);<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>Adjusting the <span class="circle-sketch-highlight">--font-size</span> variable automatically cascades changes
+        to all elements using it.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Conditional Styling" class="section">
+      <h3>3. Conditional Styling</h3>
+      <p>CSS variables open the door to conditional styling without requiring complex CSS preprocessors or frameworks.
+        You can create styles that adapt based on user preferences, states, or other conditions.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--text-color</span>: <span class="initializer">#333</span>;<br>
+          &rcub;<br><br>
+
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--text-color);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.error-message </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--text-color);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.dark-mode </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--text-color</span>: <span class="initializer">#fff</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>Activating the <span class="circle-sketch-highlight">.dark-mode</span> class instantly adjusts the text color
+        across the application.</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Simplified Theming.." class="section">
+      <h3>4. Simplified Theming in Frameworks</h3>
+      <p>When working with CSS frameworks like Bootstrap or Tailwind CSS, customizing themes can be intricate. CSS
+        variables simplify this process by providing a standardized way to override default styles.</p>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--brand-color</span>: <span
+          class="initializer">#007bff</span>;<br>
+          &rcub;<br><br>
+
+          body &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="import">var</span>(--brand-color);<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">border-color</span>: <span
+          class="import">var</span>(--brand-color);<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.dark-theme </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--brand-color</span>: <span
+          class="initializer">#28a745</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>Customizing the theme becomes a matter of adjusting a few variable values.</p>
+    </div>
+
+    <div id="Conclusion:" class="section">
+      <h2>Conclusion</h2>
+      <p>CSS variables, denoted by the <span class="circle-sketch-highlight">--var </span>syntax, bring a new dimension
+        to styling in web development. Their ability
+        to dynamically adapt styles, simplify maintenance, enable conditional styling, and streamline theming makes them
+        a powerful tool for developers. As the web development landscape continues to evolve, CSS variables stand as a
+        testament to the ongoing effort to enhance the flexibility and expressiveness of Cascading Style Sheets.
+        Incorporating these variables into your projects can significantly improve the maintainability and adaptability
+        of your styles, contributing to a more efficient and robust development workflow.</p>
+    </div>
   </div>
 
   <app-support></app-support>

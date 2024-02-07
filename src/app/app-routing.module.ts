@@ -48,6 +48,7 @@ import {
   DataAnalysisContComponent
 } from "./components/python/data-analysis/data-analysis-cont/data-analysis-cont.component";
 import {CssFlexboxComponent} from "./components/css/css-flexbox/css-flexbox.component";
+import {CssFlexboxContComponent} from "./components/css/css-flexbox/css-flexbox-cont/css-flexbox-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -94,7 +95,9 @@ const routes: Routes = [
       {path: 'var', component: CssVarComponent, children:[
           {path: '', component: CssVarContComponent}
       ]},
-      {path: 'flex-box', component: CssFlexboxComponent}
+      {path: 'flex-box', component: CssFlexboxComponent, children:[
+          {path: '', component: CssFlexboxContComponent}
+      ]}
   ]},
   { path: 'software', component:SoftwareComponent, children:[
       {path: '', redirectTo: '/qgis', pathMatch: 'full'},

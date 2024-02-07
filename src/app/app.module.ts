@@ -37,6 +37,7 @@ import { JaspComponent } from './components/software/jasp/jasp.component';
 import { JaspContComponent } from './components/software/jasp/jasp-cont/jasp-cont.component';
 import { DataAnalysisComponent } from './components/python/data-analysis/data-analysis.component';
 import { DataAnalysisContComponent } from './components/python/data-analysis/data-analysis-cont/data-analysis-cont.component';
+import { CssFlexboxComponent } from './components/css/css-flexbox/css-flexbox.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { DataAnalysisContComponent } from './components/python/data-analysis/dat
     JaspComponent,
     JaspContComponent,
     DataAnalysisComponent,
-    DataAnalysisContComponent
+    DataAnalysisContComponent,
+    CssFlexboxComponent
   ],
   imports: [
     BrowserModule,

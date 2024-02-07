@@ -47,7 +47,9 @@
         </ul>
         <li><strong>Main Axis and Cross Axis:</strong></li>
         <ul>
-          <li><strong>Main Axis:</strong> The primary axis along which flex items are laid out. It's defined by the <strong>flex-direction</strong> property.</li>
+          <li><strong>Main Axis:</strong> The primary axis along which flex items are laid out. It's defined by the
+            <strong>flex-direction</strong> property.
+          </li>
           <li><strong>Cross Axis:</strong> The perpendicular axis to the main axis.</li>
         </ul>
       </ol>
@@ -55,6 +57,102 @@
 
     <div id="Working with Flex Container" class="section">
       <h2>Working with Flex Container</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ Properties for.." class="section">
+      <h3>Properties for Flex Container</h3>
+      <ol>
+        <li><strong>flex-direction:</strong></li>
+        <ul>
+          <li>Defines the main axis direction.</li>
+          <li>Values: <strong>row</strong> (default), <strong>row-reverse</strong>, <strong>column</strong>, <strong>column-reverse</strong>.
+          </li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-direction</span>: row;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex-wrap:</strong></li>
+        <ul>
+          <li>Controls whether flex items are forced into a single line or can be wrapped onto multiple lines.</li>
+          <li>Values: <strong>nowrap</strong> (default), <strong>wrap</strong>, <strong>wrap-reverse</strong>.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-wrap</span>: wrap;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex-flow:</strong></li>
+        <ul>
+          <li>A shorthand for <strong>flex-direction</strong> and <strong>flex-wrap</strong>.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-flow</span>: row wrap;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>justify-content:</strong></li>
+        <ul>
+          <li>Controls the alignment of flex items along the main axis.</li>
+          <li>Values: <strong>flex-start</strong> (default), <strong>flex-end</strong>, <strong>center</strong>,
+            <strong>space-between</strong>, <strong>space-around</strong>.
+          </li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">justify-content</span>: center;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+      </ol>
     </div>
 
     <div id="2. Using CSS Variables.." class="section">

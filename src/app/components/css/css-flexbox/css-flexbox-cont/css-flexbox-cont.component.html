@@ -247,7 +247,8 @@
         </ul>
         <li><strong>flex:</strong></li>
         <ul>
-          <li>A shorthand for <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and <strong>flex-basis</strong>.</li>
+          <li>A shorthand for <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and <strong>flex-basis</strong>.
+          </li>
           <div class="code-snippet">
             <div class="code-snippet-header">
               <div class="console">
@@ -269,44 +270,34 @@
       </ol>
     </div>
 
-    <div id="‎ ‎ ➥ Easy Maintenance" class="section">
-      <h3>2. Easy Maintenance</h3>
-      <p>CSS variables promote easy maintenance by centralizing key values. If you need to modify a common property like
-        font size, you can do so at the root level, instantly updating it everywhere it's used.</p>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <div class="console">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="language">
-            CSS
-          </div>
-        </div>
-        <div class="code-snippet-wrapper">
-          <span class="initializer">:root </span>&lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="initializer">--font-size</span>: <span class="initializer">16px</span>;<br>
-          &rcub;<br><br>
-
-          body &lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">font-size</span>: <span class="import">var</span>(--font-size);<br>
-          &rcub;<br><br>
-
-          <span class="initializer">.header </span>&lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="initializer">--font-size</span>: <span class="import">calc</span>(<span
-          class="import">var</span>(--font-size) + <span class="initializer">4px</span>);<br>
-          &rcub;<br>
-        </div>
-      </div>
-      <p>Adjusting the <span class="circle-sketch-highlight">--font-size</span> variable automatically cascades changes
-        to all elements using it.</p>
+    <div id="Responsive Design with Flexbox" class="section">
+      <h2>Responsive Design with Flexbox</h2>
+      <p>Flexbox shines when it comes to building responsive designs. Let's see a practical example:</p>
     </div>
 
-    <div id="‎ ‎ ➥ Conditional Styling" class="section">
-      <h3>3. Conditional Styling</h3>
-      <p>CSS variables open the door to conditional styling without requiring complex CSS preprocessors or frameworks.
-        You can create styles that adapt based on user preferences, states, or other conditions.</p>
+    <div id="‎ ‎ ➥ Example: Responsive.." class="section">
+      <h3>Example: Responsive Navbar</h3>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            HTML
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          &lt;nav <span class="initializer">class</span>=<span class="display">"flex-container"</span>&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Home&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;About&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Services&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Contact&lt;/a&gt;<br>
+          &lt;/nav&gt;<br>
+        </div>
+      </div>
+
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -319,25 +310,23 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="initializer">:root </span>&lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="initializer">--text-color</span>: <span class="initializer">#333</span>;<br>
+          <span class="initializer">.flex-container </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">display</span>: flex;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">justify-content</span>: spae-around;<br>
           &rcub;<br><br>
-
-          body &lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--text-color);<br>
-          &rcub;<br><br>
-
-          <span class="initializer">.error-message </span>&lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="import">var</span>(--text-color);<br>
-          &rcub;<br><br>
-
-          <span class="initializer">.dark-mode </span>&lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="initializer">--text-color</span>: <span class="initializer">#fff</span>;<br>
+          <span class="comment">/* Style for better visualization */</span><br>
+          a &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">text-decoration</span>: none;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">padding</span>: <span class="initializer">10px</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="initializer">#333</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">border-radius</span>: <span class="initializer">5px</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">border</span>: <span class="initializer">1px</span> solid <span
+          class="initializer">#ccc</span>;<br>
           &rcub;<br>
         </div>
       </div>
-      <p>Activating the <span class="circle-sketch-highlight">.dark-mode</span> class instantly adjusts the text color
-        across the application.</p>
+      <p>In this example, the <strong>flex-container</strong> ensures the navigation links are evenly spaced. As the screen size changes,
+        the flexibility of Flexbox ensures a smooth transition to different layouts.</p>
     </div>
 
     <div id="‎ ‎ ➥ Simplified Theming.." class="section">

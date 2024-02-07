@@ -16,7 +16,7 @@ export class CssFlexboxComponent implements OnInit {
     'Working with Flex Container',
     '‎ ‎ ➥ Properties for..',
     'Styling Flex Items',
-    '‎ ‎ ➥ Properties for..',
+    '‎ ‎ ➥ Properties for flex..',
     'Responsive Design with Flexbox',
     '‎ ‎ ➥ Example: Responsive..',
     'Conclusion:',

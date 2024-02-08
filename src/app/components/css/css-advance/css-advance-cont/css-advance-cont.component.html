@@ -129,14 +129,16 @@
         </div>
         <div class="code-snippet-wrapper">
           <span class="initializer">.button </span>&lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">transition</span>: background-color <span class="initializer">0.3s</span> ease;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">transition</span>: background-color <span
+          class="initializer">0.3s</span> ease;<br>
           &rcub;<br><br>
           <span class="initializer">.button:hover </span>&lcub;<br>
           &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="initializer">#333</span>;<br>
           &rcub;<br>
         </div>
       </div>
-      <p>Here, the background color of the <strong>.button</strong> transitions smoothly over 0.3 seconds when hovered.</p>
+      <p>Here, the background color of the <strong>.button</strong> transitions smoothly over 0.3 seconds when hovered.
+      </p>
 
       <h4>CSS Animations:</h4>
       <div class="code-snippet">
@@ -152,8 +154,10 @@
         </div>
         <div class="code-snippet-wrapper">
           <span class="keyword">@keyframes </span>slide &lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="initializer">0% </span>&lcub; <span class="display">transform</span>: <span class="import">translateX</span>(<span class="initializer">0</span>); &rcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="initializer">100% </span>&lcub; <span class="display">transform</span>: <span class="import">translateX</span>(<span class="initializer">100%</span>); &rcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">0% </span>&lcub; <span class="display">transform</span>: <span
+          class="import">translateX</span>(<span class="initializer">0</span>); &rcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">100% </span>&lcub; <span class="display">transform</span>: <span
+          class="import">translateX</span>(<span class="initializer">100%</span>); &rcub;<br>
           &rcub;<br><br>
 
           <span class="initializer">.button </span>&lcub;<br>
@@ -165,34 +169,14 @@
       <p>Here, the <strong>.button</strong> element slides from the left to the right smoothly over 1 second.</p>
     </div>
 
-    <div id="Responsive Design with Flexbox" class="section">
-      <h2>Responsive Design with Flexbox</h2>
-      <p>Flexbox shines when it comes to building responsive designs. Let's see a practical example:</p>
+    <div id="4. CSS Variables" class="section">
+      <h2>4. CSS Variables</h2>
     </div>
 
-    <div id="‎ ‎ ➥ Example: Responsive.." class="section">
-      <h3>Example: Responsive Navbar</h3>
-      <div class="code-snippet">
-        <div class="code-snippet-header">
-          <div class="console">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="language">
-            HTML
-          </div>
-        </div>
-        <div class="code-snippet-wrapper">
-          &lt;nav <span class="initializer">class</span>=<span class="display">"flex-container"</span>&gt;<br>
-          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Home&lt;/a&gt;<br>
-          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;About&lt;/a&gt;<br>
-          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Services&lt;/a&gt;<br>
-          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Contact&lt;/a&gt;<br>
-          &lt;/nav&gt;<br>
-        </div>
-      </div>
-
+    <div id="‎ ‎ ➥ Modularizing Your.." class="section">
+      <h3>Modularizing Your Styles</h3>
+      <p>CSS Variables provide a way to store and reuse values throughout your stylesheet. This enhances maintainability
+        and allows for easy theming.</p>
       <div class="code-snippet">
         <div class="code-snippet-header">
           <div class="console">
@@ -205,24 +189,18 @@
           </div>
         </div>
         <div class="code-snippet-wrapper">
-          <span class="initializer">.flex-container </span>&lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">display</span>: flex;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">justify-content</span>: spae-around;<br>
+          <span class="initializer">:root </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">--main-color</span>: <span class="initializer">#333</span>;<br>
           &rcub;<br><br>
-          <span class="comment">/* Style for better visualization */</span><br>
-          a &lcub;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">text-decoration</span>: none;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">padding</span>: <span class="initializer">10px</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="initializer">#333</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">border-radius</span>: <span class="initializer">5px</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">border</span>: <span class="initializer">1px</span> solid <span
-          class="initializer">#ccc</span>;<br>
+
+          <span class="initializer">.header </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="import">var</span>(--main-color);<br>
           &rcub;<br>
         </div>
       </div>
-      <p>In this example, the <strong>flex-container</strong> ensures the navigation links are evenly spaced. As the
-        screen size changes,
-        the flexibility of Flexbox ensures a smooth transition to different layouts.</p>
+
+      <p>By defining <strong>--main-color</strong> in the <strong>:root</strong> pseudo-class, it becomes a global
+        variable accessible throughout the stylesheet.</p>
     </div>
 
     <div id="Conclusion:" class="section">

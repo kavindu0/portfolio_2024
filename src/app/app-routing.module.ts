@@ -49,6 +49,8 @@ import {
 } from "./components/python/data-analysis/data-analysis-cont/data-analysis-cont.component";
 import {CssFlexboxComponent} from "./components/css/css-flexbox/css-flexbox.component";
 import {CssFlexboxContComponent} from "./components/css/css-flexbox/css-flexbox-cont/css-flexbox-cont.component";
+import {CssAdvanceComponent} from "./components/css/css-advance/css-advance.component";
+import {CssAdvanceContComponent} from "./components/css/css-advance/css-advance-cont/css-advance-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -97,6 +99,9 @@ const routes: Routes = [
       ]},
       {path: 'flex-box', component: CssFlexboxComponent, children:[
           {path: '', component: CssFlexboxContComponent}
+      ]},
+      {path: 'advanced', component: CssAdvanceComponent, children:[
+          {path: '', component: CssAdvanceContComponent}
       ]}
   ]},
   { path: 'software', component:SoftwareComponent, children:[

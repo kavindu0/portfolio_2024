@@ -45,10 +45,32 @@
           <span class="initializer">.container </span>&lcub;<br>
           &nbsp;&nbsp;&nbsp;<span class="display">display</span>: grid;<br>
           &nbsp;&nbsp;&nbsp;<span class="display">grid-gap</span>: <span class="initializer">10px</span>;<br>
-          &nbsp;&nbsp;&nbsp;<span class="display">grid-template-columns</span>: <span class="initializer">1</span>fr <span class="initializer">1</span>fr <span class="initializer">1</span>fr;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">grid-template-columns</span>: <span class="initializer">1</span>fr
+          <span class="initializer">1</span>fr <span class="initializer">1</span>fr;<br>
           &rcub;<br>
         </div>
       </div>
+
+      <h4>Grid Items:</h4>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">.item </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">grid-column</span>: span <span class="initializer">2</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>In this example, the <strong>.container</strong> is set as a grid with three columns of equal width and a gap
+        of 20 pixels. The <strong>.item</strong> spans two columns within the grid.</p>
     </div>
 
     <div id="Working with Flex Container" class="section">

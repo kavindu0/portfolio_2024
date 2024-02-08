@@ -101,122 +101,68 @@
           &rcub;<br>
         </div>
       </div>
-      <p>In this example, the <strong>.container</strong> is a flex container with items evenly spaced and vertically centered. This is particularly handy for building responsive navigation bars.</p>
+      <p>In this example, the <strong>.container</strong> is a flex container with items evenly spaced and vertically
+        centered. This is particularly handy for building responsive navigation bars.</p>
     </div>
 
-    <div id="Styling Flex Items" class="section">
-      <h2>Styling Flex Items</h2>
+    <div id="3. CSS Transitions and.." class="section">
+      <h2>3. CSS Transitions and Animations</h2>
     </div>
 
-    <div id="‎ ‎ ➥ Properties for flex.." class="section">
-      <ol>
-        <li><strong>order:</strong></li>
-        <ul>
-          <li>Specifies the order of a flex item.</li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-item </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">order</span>: <span class="initializer">2</span>;<br>
-              &rcub;<br>
-            </div>
+    <div id="‎ ‎ ➥ Adding Motion to.." class="section">
+      <h3>Adding Motion to Elements</h3>
+      <p>
+        Transitions and animations bring life to your web pages. They can be applied to various properties, providing
+        smooth and engaging user experiences.
+      </p>
+      <h4>CSS Transitions:</h4>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
-        </ul>
-        <li><strong>flex-grow:</strong></li>
-        <ul>
-          <li>Specifies the ability for a flex item to grow.</li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-item </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">flex-grow</span>: <span class="initializer">1</span>;<br>
-              &rcub;<br>
-            </div>
+          <div class="language">
+            CSS
           </div>
-        </ul>
-        <li><strong>flex-shrink:</strong></li>
-        <ul>
-          <li>Specifies the ability for a flex item to shrink.</li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-item </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">flex-shrink</span>: <span class="initializer">0</span>;<br>
-              &rcub;<br>
-            </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">.button </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">transition</span>: background-color <span class="initializer">0.3s</span> ease;<br>
+          &rcub;<br><br>
+          <span class="initializer">.button:hover </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">background-color</span>: <span class="initializer">#333</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>Here, the background color of the <strong>.button</strong> transitions smoothly over 0.3 seconds when hovered.</p>
+
+      <h4>CSS Animations:</h4>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
-        </ul>
-        <li><strong>flex-basis:</strong></li>
-        <ul>
-          <li>Specifies the initial size of a flex item.</li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-item </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">flex-basis</span>: <span class="initializer">200px</span>;<br>
-              &rcub;<br>
-            </div>
+          <div class="language">
+            CSS
           </div>
-        </ul>
-        <li><strong>flex:</strong></li>
-        <ul>
-          <li>A shorthand for <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and <strong>flex-basis</strong>.
-          </li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-item </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">flex</span>: <span class="initializer">1 0 200px</span>;<br>
-              &rcub;<br>
-            </div>
-          </div>
-        </ul>
-      </ol>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="keyword">@keyframes </span>slide &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">0% </span>&lcub; <span class="display">transform</span>: <span class="import">translateX</span>(<span class="initializer">0</span>); &rcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="initializer">100% </span>&lcub; <span class="display">transform</span>: <span class="import">translateX</span>(<span class="initializer">100%</span>); &rcub;<br>
+          &rcub;<br><br>
+
+          <span class="initializer">.button </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">animation</span>: slide <span class="initializer">1s</span> ease;<br>
+          &rcub;<br>
+        </div>
+      </div>
+
+      <p>Here, the <strong>.button</strong> element slides from the left to the right smoothly over 1 second.</p>
     </div>
 
     <div id="Responsive Design with Flexbox" class="section">

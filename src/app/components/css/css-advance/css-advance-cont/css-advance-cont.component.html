@@ -19,7 +19,7 @@
         explore some of these advanced techniques, unraveling the complexity and providing practical examples.</p>
     </div>
 
-    <div id="Understanding Flexbox" class="section">
+    <div id="1. CSS Grid Layout" class="section">
       <h2>1. CSS Grid Layout</h2>
     </div>
 
@@ -73,104 +73,35 @@
         of 20 pixels. The <strong>.item</strong> spans two columns within the grid.</p>
     </div>
 
-    <div id="Working with Flex Container" class="section">
-      <h2>Working with Flex Container</h2>
+    <div id="2. CSS Flexbox for Responsive.." class="section">
+      <h2>2. CSS Flexbox for Responsive Design</h2>
     </div>
 
-    <div id="‎ ‎ ➥ Properties for.." class="section">
-      <h3>Properties for Flex Container</h3>
-      <ol>
-        <li><strong>flex-direction:</strong></li>
-        <ul>
-          <li>Defines the main axis direction.</li>
-          <li>Values: <strong>row</strong> (default), <strong>row-reverse</strong>, <strong>column</strong>, <strong>column-reverse</strong>.
-          </li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-container </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">flex-direction</span>: row;<br>
-              &rcub;<br>
-            </div>
+    <div id="‎ ‎ ➥ Leveraging Flexbox" class="section">
+      <h3>Leveraging Flexbox</h3>
+      <p>Flexbox is excellent for building flexible and responsive layouts. It's especially useful for creating dynamic
+        navigation menus or aligning items within a container.</p>
+
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
-        </ul>
-        <li><strong>flex-wrap:</strong></li>
-        <ul>
-          <li>Controls whether flex items are forced into a single line or can be wrapped onto multiple lines.</li>
-          <li>Values: <strong>nowrap</strong> (default), <strong>wrap</strong>, <strong>wrap-reverse</strong>.</li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-container </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">flex-wrap</span>: wrap;<br>
-              &rcub;<br>
-            </div>
+          <div class="language">
+            CSS
           </div>
-        </ul>
-        <li><strong>flex-flow:</strong></li>
-        <ul>
-          <li>A shorthand for <strong>flex-direction</strong> and <strong>flex-wrap</strong>.</li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-container </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">flex-flow</span>: row wrap;<br>
-              &rcub;<br>
-            </div>
-          </div>
-        </ul>
-        <li><strong>justify-content:</strong></li>
-        <ul>
-          <li>Controls the alignment of flex items along the main axis.</li>
-          <li>Values: <strong>flex-start</strong> (default), <strong>flex-end</strong>, <strong>center</strong>,
-            <strong>space-between</strong>, <strong>space-around</strong>.
-          </li>
-          <div class="code-snippet">
-            <div class="code-snippet-header">
-              <div class="console">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-              </div>
-              <div class="language">
-                CSS
-              </div>
-            </div>
-            <div class="code-snippet-wrapper">
-              <span class="initializer">.flex-container </span>&lcub;<br>
-              &nbsp;&nbsp;&nbsp;<span class="display">justify-content</span>: center;<br>
-              &rcub;<br>
-            </div>
-          </div>
-        </ul>
-      </ol>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">.container </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">display</span>: flex;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">justify-content</span>: space-between;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">align-items</span>: center;<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>In this example, the <strong>.container</strong> is a flex container with items evenly spaced and vertically centered. This is particularly handy for building responsive navigation bars.</p>
     </div>
 
     <div id="Styling Flex Items" class="section">

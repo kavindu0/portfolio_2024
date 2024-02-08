@@ -9,16 +9,17 @@ import {ScrollService} from "../../../services/scroll.service";
 export class CssAdvanceComponent implements OnInit {
 
   sections = [
-    'Mastering CSS Flexbox:',
-    'Understanding Flexbox',
-    '‎ ‎ ➥ What is Flexbox?',
-    '‎ ‎ ➥ Key Concepts',
-    'Working with Flex Container',
-    '‎ ‎ ➥ Properties for..',
-    'Styling Flex Items',
-    '‎ ‎ ➥ Properties for flex..',
-    'Responsive Design with Flexbox',
-    '‎ ‎ ➥ Example: Responsive..',
+    'Mastering Advanced CSS..',
+    '1. CSS Grid Layout',
+    '‎ ‎ ➥ Understanding CSS..',
+    '2. CSS Flexbox for Responsive..',
+    '‎ ‎ ➥ Leveraging Flexbox',
+    '3. CSS Transitions and..',
+    '‎ ‎ ➥ Adding Motion to..',
+    '4. CSS Variables',
+    '‎ ‎ ➥ Modularizing Your..',
+    '5. Responsive Typography..',
+    '‎ ‎ ➥ Scaling Text..',
     'Conclusion:',
   ]
   activeSection: string | any;

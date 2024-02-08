@@ -1,1 +1,344 @@
-<p>css-advance-cont works!</p>
+<div class="note-title-wrapper-header">
+  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+  <p><span routerLink="/home">Notes</span> / CSS / CSS --var</p>
+</div>
+<div class="container">
+  <div class="note-content">
+    <div class="banner">
+      <img src="assets/images/css/var.png" alt="css --var">
+    </div>
+    <div id="Mastering CSS Flexbox:" class="section">
+      <h1>Mastering CSS Flexbox: A Comprehensive Guide</h1>
+      <p class="note-tags"><span><strong>Tended:</strong> Feb 2024</span> <span><strong>Status:</strong> Seed</span>
+      </p>
+    </div>
+
+    <div id="Introduction:" class="section">
+      <p>Cascading Style Sheets (CSS) <span class="realistic-marker-highlight">Flexbox</span> is a powerful layout model
+        that allows you to design complex and
+        responsive web layouts with ease. In this guide, we'll dive deep into the world of Flexbox, exploring its
+        concepts, properties, and providing practical examples.</p>
+    </div>
+
+    <div id="Understanding Flexbox" class="section">
+      <h2>Understanding Flexbox</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ What is Flexbox?" class="section">
+      <h3>What is Flexbox?</h3>
+      <p>
+        Flexbox, or the Flexible Box Layout, is a layout model in CSS that allows the design of complex layouts and
+        structures with a more efficient and predictable way than traditional models. It's particularly well-suited for
+        designing dynamic and responsive user interfaces.
+      </p>
+    </div>
+
+    <div id="‎ ‎ ➥ Key Concepts" class="section">
+      <h3>Key Concepts</h3>
+      <ol>
+        <li><strong>Flex Container and Flex Items:</strong></li>
+        <ul>
+          <li><strong>Flex Container:</strong>The parent element containing flex items. Apply <strong>display:
+            flex;</strong> or <strong>display: inline-flex;</strong> to activate the flex container.
+          </li>
+          <li><strong>Flex Items:</strong> The child elements of the flex container. They are aligned and ordered within
+            the flex container.
+          </li>
+        </ul>
+        <li><strong>Main Axis and Cross Axis:</strong></li>
+        <ul>
+          <li><strong>Main Axis:</strong> The primary axis along which flex items are laid out. It's defined by the
+            <strong>flex-direction</strong> property.
+          </li>
+          <li><strong>Cross Axis:</strong> The perpendicular axis to the main axis.</li>
+        </ul>
+      </ol>
+    </div>
+
+    <div id="Working with Flex Container" class="section">
+      <h2>Working with Flex Container</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ Properties for.." class="section">
+      <h3>Properties for Flex Container</h3>
+      <ol>
+        <li><strong>flex-direction:</strong></li>
+        <ul>
+          <li>Defines the main axis direction.</li>
+          <li>Values: <strong>row</strong> (default), <strong>row-reverse</strong>, <strong>column</strong>, <strong>column-reverse</strong>.
+          </li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-direction</span>: row;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex-wrap:</strong></li>
+        <ul>
+          <li>Controls whether flex items are forced into a single line or can be wrapped onto multiple lines.</li>
+          <li>Values: <strong>nowrap</strong> (default), <strong>wrap</strong>, <strong>wrap-reverse</strong>.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-wrap</span>: wrap;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex-flow:</strong></li>
+        <ul>
+          <li>A shorthand for <strong>flex-direction</strong> and <strong>flex-wrap</strong>.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-flow</span>: row wrap;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>justify-content:</strong></li>
+        <ul>
+          <li>Controls the alignment of flex items along the main axis.</li>
+          <li>Values: <strong>flex-start</strong> (default), <strong>flex-end</strong>, <strong>center</strong>,
+            <strong>space-between</strong>, <strong>space-around</strong>.
+          </li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-container </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">justify-content</span>: center;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+      </ol>
+    </div>
+
+    <div id="Styling Flex Items" class="section">
+      <h2>Styling Flex Items</h2>
+    </div>
+
+    <div id="‎ ‎ ➥ Properties for flex.." class="section">
+      <ol>
+        <li><strong>order:</strong></li>
+        <ul>
+          <li>Specifies the order of a flex item.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-item </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">order</span>: <span class="initializer">2</span>;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex-grow:</strong></li>
+        <ul>
+          <li>Specifies the ability for a flex item to grow.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-item </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-grow</span>: <span class="initializer">1</span>;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex-shrink:</strong></li>
+        <ul>
+          <li>Specifies the ability for a flex item to shrink.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-item </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-shrink</span>: <span class="initializer">0</span>;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex-basis:</strong></li>
+        <ul>
+          <li>Specifies the initial size of a flex item.</li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-item </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex-basis</span>: <span class="initializer">200px</span>;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+        <li><strong>flex:</strong></li>
+        <ul>
+          <li>A shorthand for <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and <strong>flex-basis</strong>.
+          </li>
+          <div class="code-snippet">
+            <div class="code-snippet-header">
+              <div class="console">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="language">
+                CSS
+              </div>
+            </div>
+            <div class="code-snippet-wrapper">
+              <span class="initializer">.flex-item </span>&lcub;<br>
+              &nbsp;&nbsp;&nbsp;<span class="display">flex</span>: <span class="initializer">1 0 200px</span>;<br>
+              &rcub;<br>
+            </div>
+          </div>
+        </ul>
+      </ol>
+    </div>
+
+    <div id="Responsive Design with Flexbox" class="section">
+      <h2>Responsive Design with Flexbox</h2>
+      <p>Flexbox shines when it comes to building responsive designs. Let's see a practical example:</p>
+    </div>
+
+    <div id="‎ ‎ ➥ Example: Responsive.." class="section">
+      <h3>Example: Responsive Navbar</h3>
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            HTML
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          &lt;nav <span class="initializer">class</span>=<span class="display">"flex-container"</span>&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Home&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;About&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Services&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;a <span class="initializer">href</span>=<span class="display">"#"</span>&gt;Contact&lt;/a&gt;<br>
+          &lt;/nav&gt;<br>
+        </div>
+      </div>
+
+      <div class="code-snippet">
+        <div class="code-snippet-header">
+          <div class="console">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="language">
+            CSS
+          </div>
+        </div>
+        <div class="code-snippet-wrapper">
+          <span class="initializer">.flex-container </span>&lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">display</span>: flex;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">justify-content</span>: spae-around;<br>
+          &rcub;<br><br>
+          <span class="comment">/* Style for better visualization */</span><br>
+          a &lcub;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">text-decoration</span>: none;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">padding</span>: <span class="initializer">10px</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">color</span>: <span class="initializer">#333</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">border-radius</span>: <span class="initializer">5px</span>;<br>
+          &nbsp;&nbsp;&nbsp;<span class="display">border</span>: <span class="initializer">1px</span> solid <span
+          class="initializer">#ccc</span>;<br>
+          &rcub;<br>
+        </div>
+      </div>
+      <p>In this example, the <strong>flex-container</strong> ensures the navigation links are evenly spaced. As the
+        screen size changes,
+        the flexibility of Flexbox ensures a smooth transition to different layouts.</p>
+    </div>
+
+    <div id="Conclusion:" class="section">
+      <h2>Conclusion</h2>
+      <p>CSS Flexbox is a powerful tool for creating flexible and responsive layouts. By understanding its properties
+        and concepts, you can take control of your website's structure and adapt it to various screen sizes and devices.
+        Experiment with these examples and integrate Flexbox into your web development toolkit for more efficient and
+        dynamic designs.</p>
+    </div>
+  </div>
+
+  <app-support></app-support>
+
+</div>

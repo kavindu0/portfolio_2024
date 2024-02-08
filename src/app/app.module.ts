@@ -40,6 +40,7 @@ import { DataAnalysisContComponent } from './components/python/data-analysis/dat
 import { CssFlexboxComponent } from './components/css/css-flexbox/css-flexbox.component';
 import { CssFlexboxContComponent } from './components/css/css-flexbox/css-flexbox-cont/css-flexbox-cont.component';
 import { CssAdvanceComponent } from './components/css/css-advance/css-advance.component';
+import { CssAdvanceContComponent } from './components/css/css-advance/css-advance-cont/css-advance-cont.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { CssAdvanceComponent } from './components/css/css-advance/css-advance.co
     DataAnalysisContComponent,
     CssFlexboxComponent,
     CssFlexboxContComponent,
-    CssAdvanceComponent
+    CssAdvanceComponent,
+    CssAdvanceContComponent
   ],
   imports: [
     BrowserModule,

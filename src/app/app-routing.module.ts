@@ -51,6 +51,8 @@ import {CssFlexboxComponent} from "./components/css/css-flexbox/css-flexbox.comp
 import {CssFlexboxContComponent} from "./components/css/css-flexbox/css-flexbox-cont/css-flexbox-cont.component";
 import {CssAdvanceComponent} from "./components/css/css-advance/css-advance.component";
 import {CssAdvanceContComponent} from "./components/css/css-advance/css-advance-cont/css-advance-cont.component";
+import {PostmanComponent} from "./components/software/postman/postman.component";
+import {PostmanContComponent} from "./components/software/postman/postman-cont/postman-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -111,6 +113,9 @@ const routes: Routes = [
       ]},
       {path: 'jasp', component: JaspComponent, children:[
           {path: '', component: JaspContComponent}
+      ]},
+      {path: 'postman', component: PostmanComponent, children:[
+          {path: '', component: PostmanContComponent}
       ]}
   ]}
 ];

@@ -41,6 +41,7 @@ import { CssFlexboxComponent } from './components/css/css-flexbox/css-flexbox.co
 import { CssFlexboxContComponent } from './components/css/css-flexbox/css-flexbox-cont/css-flexbox-cont.component';
 import { CssAdvanceComponent } from './components/css/css-advance/css-advance.component';
 import { CssAdvanceContComponent } from './components/css/css-advance/css-advance-cont/css-advance-cont.component';
+import { PostmanComponent } from './components/software/postman/postman.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { CssAdvanceContComponent } from './components/css/css-advance/css-advanc
     CssFlexboxComponent,
     CssFlexboxContComponent,
     CssAdvanceComponent,
-    CssAdvanceContComponent
+    CssAdvanceContComponent,
+    PostmanComponent
   ],
   imports: [
     BrowserModule,

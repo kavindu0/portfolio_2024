@@ -8,11 +8,17 @@ import {ScrollService} from "../../../services/scroll.service";
 })
 export class PostmanComponent implements OnInit {
   sections = [
-    'Unveiling Postman',
-    'Introduction',
-    '1. Getting Started with Postman',
-    '2. Conducting Analyses in Postman',
-    '3. Advantages of Using Postman',
+    'Mastering API Testing',
+    '1. Introduction to Postman',
+    '2. Creating Requests',
+    '3. Organizing Requests with..',
+    '4. Request Authorization',
+    '5. Testing and Automation',
+    '6. Environments and Variables',
+    '7. Documenting APIs',
+    '8. Mock Servers',
+    '9. Monitoring APIs',
+    '10. Advanced Features',
     'Conclusion',
   ]
   activeSection: string | any

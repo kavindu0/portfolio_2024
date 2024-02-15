@@ -43,6 +43,11 @@ import { CssAdvanceComponent } from './components/css/css-advance/css-advance.co
 import { CssAdvanceContComponent } from './components/css/css-advance/css-advance-cont/css-advance-cont.component';
 import { PostmanComponent } from './components/software/postman/postman.component';
 import { PostmanContComponent } from './components/software/postman/postman-cont/postman-cont.component';
+import {HtmlComponent} from "./components/html/html.component";
+import {SeoComponent} from "./components/html/seo/seo.component";
+import {SeoContComponent} from "./components/html/seo/seo-cont/seo-cont.component";
+import {TablesComponent} from "./components/html/tables/tables.component";
+import {TablesContComponent} from "./components/html/tables/tables-cont/tables-cont.component";
 
 @NgModule({
   declarations: [
@@ -86,7 +91,12 @@ import { PostmanContComponent } from './components/software/postman/postman-cont
     CssAdvanceComponent,
     CssAdvanceContComponent,
     PostmanComponent,
-    PostmanContComponent
+    PostmanContComponent,
+    HtmlComponent,
+    SeoComponent,
+    SeoContComponent,
+    TablesComponent,
+    TablesContComponent
   ],
   imports: [
     BrowserModule,

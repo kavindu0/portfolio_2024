@@ -53,6 +53,11 @@ import {CssAdvanceComponent} from "./components/css/css-advance/css-advance.comp
 import {CssAdvanceContComponent} from "./components/css/css-advance/css-advance-cont/css-advance-cont.component";
 import {PostmanComponent} from "./components/software/postman/postman.component";
 import {PostmanContComponent} from "./components/software/postman/postman-cont/postman-cont.component";
+import {HtmlComponent} from "./components/html/html.component";
+import {SeoComponent} from "./components/html/seo/seo.component";
+import {SeoContComponent} from "./components/html/seo/seo-cont/seo-cont.component";
+import {TablesComponent} from "./components/html/tables/tables.component";
+import {TablesContComponent} from "./components/html/tables/tables-cont/tables-cont.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -117,7 +122,16 @@ const routes: Routes = [
       {path: 'postman', component: PostmanComponent, children:[
           {path: '', component: PostmanContComponent}
       ]}
-  ]}
+  ]},
+  { path: 'html', component: HtmlComponent, children:[
+      {path: '', redirectTo: '/seo', pathMatch: 'full'},
+      {path: 'seo', component: SeoComponent, children:[
+          {path: '', component: SeoContComponent}
+        ]},
+      {path: 'tables', component: TablesComponent, children:[
+          {path: '', component: TablesContComponent}
+        ]}
+    ]}
 ];
 
 @NgModule({
